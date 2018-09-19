@@ -85,13 +85,17 @@ Public Class XInfoImperiumDB
         Set(value As String)
             If value.Substring(2, 1) = "." And value.Substring(5, 1) = "." Then
                 value = value.Substring(6) & value.Substring(3, 2) & value.Substring(0, 2)
-            End If
-            If value.Contains("/") = True Then
+            ElseIf value.Contains("/") = True Then
                 Dim DatumSplit() As String = value.Split("/"c)
+                value = Format(Val(DatumSplit(2)), "0000") & Format(Val(DatumSplit(0)), "00") & Format(Val(DatumSplit(1)), "00")
+            ElseIf value.Contains("-") = True Then
+                Dim DatumSplit() As String = value.Split("-"c)
                 value = Format(Val(DatumSplit(2)), "0000") & Format(Val(DatumSplit(0)), "00") & Format(Val(DatumSplit(1)), "00")
             End If
             DoNotSerialize = DateTime.ParseExact(value, "yyyyMMdd", CultureInfo.InvariantCulture)
+
             NotifyPropertyChanged()
+
         End Set
     End Property
 

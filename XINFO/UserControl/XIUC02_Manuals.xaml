@@ -8,7 +8,8 @@
     Name="XIUC02"
     d:DesignHeight="600"
     d:DesignWidth="950"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    >
 
 
     <Grid ShowGridLines="True">
@@ -39,50 +40,56 @@
             Grid.Column="1"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
+            Content="X100"
             FontSize="36"
             FontWeight="Bold"
-            Content="X100" />
+            />
         <Label
             Grid.Row="0"
             Grid.Column="2"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
+            Content="X150"
             FontSize="36"
             FontWeight="Bold"
-            Content="X150" />
+            />
         <Label
             Grid.Row="0"
             Grid.Column="3"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
+            Content="X200"
             FontSize="36"
             FontWeight="Bold"
-            Content="X200" />
+            />
         <Label
             Grid.Row="0"
             Grid.Column="4"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
+            Content="X300"
             FontSize="36"
             FontWeight="Bold"
-            Content="X300" />
+            />
         <Label
             Grid.Row="0"
             Grid.Column="5"
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
+            Content="Extras"
             FontSize="36"
             FontWeight="Bold"
-            Content="Extras" />
+            />
 
         <Label
             Grid.Row="1"
             Margin="10,0,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
+            Content="EN"
             FontSize="36"
             FontWeight="Bold"
-            Content="EN" />
+            />
 
         <Button
             x:Name="BTN02_FisicaX100EN"
@@ -94,12 +101,13 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
             Background="LightSteelBlue"
+            Click="ShowTheManual"
+            Content="Technical Manual with Fisica"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Technical Manual with Fisica" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_FisicaX150EN"
             Grid.Row="1"
@@ -110,12 +118,13 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
             Background="LightSteelBlue"
+            Click="ShowTheManual"
+            Content="Technical Manual with Fisica"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Technical Manual with Fisica" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_FisicaX200EN"
             Grid.Row="1"
@@ -126,12 +135,13 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
             Background="LightSteelBlue"
+            Click="ShowTheManual"
+            Content="Technical Manual with Fisica"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Technical Manual with Fisica" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_FisicaX300EN"
             Grid.Row="1"
@@ -142,12 +152,13 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
             Background="LightSteelBlue"
+            Click="ShowTheManual"
+            Content="Technical Manual with Fisica"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Technical Manual with Fisica" />
+            Style="{StaticResource STLButton02}"
+            />
 
 
 
@@ -156,9 +167,10 @@
             Margin="10,0,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
+            Content="EN"
             FontSize="36"
             FontWeight="Bold"
-            Content="EN" />
+            />
 
         <Button
             x:Name="BTN02_ConcertoX100EN"
@@ -170,11 +182,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Operator Manual Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Operator Manual Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_ConcertoX150EN"
             Grid.Row="2"
@@ -185,11 +198,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Operator Manual Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Operator Manual Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_ConcertoX200EN"
             Grid.Row="2"
@@ -200,11 +214,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Operator Manual Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Operator Manual Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_ConcertoX300EN"
             Grid.Row="2"
@@ -215,11 +230,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Operator Manual Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Operator Manual Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
 
 
         <Label
@@ -227,9 +243,10 @@
             Margin="10,0,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
+            Content="DE"
             FontSize="36"
             FontWeight="Bold"
-            Content="DE" />
+            />
         <Button
             x:Name="BTN02_ConcertoX100DE"
             Grid.Row="3"
@@ -240,11 +257,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Bedienungsanleitung Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Bedienungsanleitung Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_ConcertoX150DE"
             Grid.Row="3"
@@ -255,11 +273,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Bedienungsanleitung Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Bedienungsanleitung Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_ConcertoX200DE"
             Grid.Row="3"
@@ -270,11 +289,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Bedienungsanleitung Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Bedienungsanleitung Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
 
         <Button
             x:Name="BTN02_ExtraDE"
@@ -286,21 +306,23 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
             Background="BlanchedAlmond"
+            Click="ShowTheManual"
+            Content="Fisica"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Fisica" />
+            Style="{StaticResource STLButton02}"
+            />
 
         <Label
             Grid.Row="4"
             Margin="10,0,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
+            Content="IT"
             FontSize="36"
             FontWeight="Bold"
-            Content="IT" />
+            />
         <Button
             x:Name="BTN02_ConcertoX100IT"
             Grid.Row="4"
@@ -311,11 +333,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Manuale dell' operatore Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Manuale dell' operatore Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_ConcertoX150IT"
             Grid.Row="4"
@@ -326,11 +349,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Manuale dell' operatore Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Manuale dell' operatore Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_ConcertoX200IT"
             Grid.Row="4"
@@ -341,11 +365,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Manuale dell' operatore Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Manuale dell' operatore Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
 
 
         <Label
@@ -353,9 +378,10 @@
             Margin="10,0,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
+            Content="SE"
             FontSize="36"
             FontWeight="Bold"
-            Content="SE" />
+            />
         <Button
             x:Name="BTN02_ConcertoX150SE"
             Grid.Row="5"
@@ -366,11 +392,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Bruksanvisning Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Bruksanvisning Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
         <Button
             x:Name="BTN02_ConcertoX200SE"
             Grid.Row="5"
@@ -381,11 +408,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Bruksanvisning Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Bruksanvisning Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
 
 
         <Label
@@ -393,9 +421,10 @@
             Margin="10,0,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
+            Content="DA"
             FontSize="36"
             FontWeight="Bold"
-            Content="DA" />
+            />
         <Button
             x:Name="BTN02_ConcertoX100DA"
             Grid.Row="6"
@@ -406,11 +435,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Betjeningsvejledning Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Betjeningsvejledning Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
 
 
         <Label
@@ -418,9 +448,10 @@
             Margin="10,0,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Center"
+            Content="ES"
             FontSize="36"
             FontWeight="Bold"
-            Content="ES" />
+            />
         <Button
             x:Name="BTN02_ConcertoX200ES"
             Grid.Row="7"
@@ -431,11 +462,12 @@
             Margin="5"
             HorizontalAlignment="Stretch"
             VerticalAlignment="Center"
-            Style="{StaticResource STLButton02}"
+            Click="ShowTheManual"
+            Content="Manual del usuario Concerto"
             FontSize="15"
             FontWeight="Bold"
-            Click="ShowTheManual"
-            Content="Manual del usuario Concerto" />
+            Style="{StaticResource STLButton02}"
+            />
 
     </Grid>
 </UserControl>

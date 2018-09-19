@@ -9,7 +9,8 @@
     Name="XIUC01"
     d:DesignHeight="600"
     d:DesignWidth="950"
-    mc:Ignorable="d">
+    mc:Ignorable="d"
+    >
 
 
     <Grid>
@@ -30,21 +31,23 @@
                 <ColumnDefinition Width="20" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <!--  ErrorCode_00002  -->
+
             <Label
                 Grid.Row="0"
                 Grid.Column="0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
+                Content="{x:Static p:Resources.XINFO_UC01_001}"
                 FontSize="24"
-                Content="{x:Static p:Resources.XINFO_UC01_001}" />
+                />
             <WrapPanel
                 Grid.Row="0"
                 Grid.Column="2"
                 Margin="-20,0,0,0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
-                Orientation="Horizontal">
+                Orientation="Horizontal"
+                >
 
                 <RadioButton
                     x:Name="RDBTN01_EN"
@@ -53,10 +56,11 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     VerticalContentAlignment="Center"
-                    FontSize="24"
                     Click="SetLanguage"
                     Content="English"
-                    IsChecked="True" />
+                    FontSize="24"
+                    IsChecked="True"
+                    />
                 <RadioButton
                     x:Name="RDBTN01_DE"
                     Grid.Column="2"
@@ -64,9 +68,10 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     VerticalContentAlignment="Center"
-                    FontSize="24"
                     Click="SetLanguage"
-                    Content="Deutsch" />
+                    Content="Deutsch"
+                    FontSize="24"
+                    />
                 <RadioButton
                     x:Name="RDBTN01_DA"
                     Grid.Column="2"
@@ -74,9 +79,10 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     VerticalContentAlignment="Center"
-                    FontSize="24"
                     Click="SetLanguage"
-                    Content="Dansk" />
+                    Content="Dansk"
+                    FontSize="24"
+                    />
                 <RadioButton
                     x:Name="RDBTN01_IT"
                     Grid.Column="2"
@@ -84,9 +90,10 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     VerticalContentAlignment="Center"
-                    FontSize="24"
                     Click="SetLanguage"
-                    Content="Italiano" />
+                    Content="Italiano"
+                    FontSize="24"
+                    />
                 <RadioButton
                     x:Name="RDBTN01_SE"
                     Grid.Column="2"
@@ -94,9 +101,10 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     VerticalContentAlignment="Center"
-                    FontSize="24"
                     Click="SetLanguage"
-                    Content="Svenska" />
+                    Content="Svenska"
+                    FontSize="24"
+                    />
                 <RadioButton
                     x:Name="RDBTN01_ES"
                     Grid.Column="2"
@@ -104,9 +112,10 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     VerticalContentAlignment="Center"
-                    FontSize="24"
                     Click="SetLanguage"
-                    Content="Español" />
+                    Content="Español"
+                    FontSize="24"
+                    />
             </WrapPanel>
 
             <Label
@@ -114,8 +123,9 @@
                 Grid.Column="0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
+                Content="{x:Static p:Resources.XINFO_UC01_002}"
                 FontSize="24"
-                Content="{x:Static p:Resources.XINFO_UC01_002}" />
+                />
             <ComboBox
                 x:Name="CMBBX01_ErrorCodes"
                 Grid.Row="1"
@@ -124,17 +134,18 @@
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
                 HorizontalContentAlignment="Right"
-                FontSize="24"
                 DisplayMemberPath="ErrorCode"
+                FontSize="24"
                 ItemsSource="{Binding XS100ErrorsView}"
-                SelectedValuePath="Content" />
+                />
             <Label
                 Grid.Row="2"
                 Grid.Column="0"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
+                Content="{x:Static p:Resources.XINFO_UC01_003}"
                 FontSize="24"
-                Content="{x:Static p:Resources.XINFO_UC01_003}" />
+                />
             <TextBox
                 x:Name="TXTBX01"
                 Grid.Row="2"
@@ -144,13 +155,16 @@
                 FontSize="24"
                 IsReadOnly="True"
                 Text="{Binding ElementName=CMBBX01_ErrorCodes, Path=SelectedItem.ErrorMessage}"
-                TextWrapping="Wrap" />
-            <Label Grid.Row="3"
-                   Grid.Column="0"
-                   HorizontalAlignment="Left"
-                   VerticalAlignment="Center"
-                   FontSize="24"
-                   Content="{x:Static p:Resources.XINFO_UC01_004}" />
+                TextWrapping="Wrap"
+                />
+            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                HorizontalAlignment="Left"
+                VerticalAlignment="Center"
+                Content="{x:Static p:Resources.XINFO_UC01_004}"
+                FontSize="24"
+                />
             <TextBox
                 x:Name="TXTBX02"
                 Grid.Row="3"
@@ -161,7 +175,8 @@
                 IsReadOnly="True"
                 Text="{Binding ElementName=CMBBX01_ErrorCodes, Path=SelectedItem.ErrorDescription}"
                 TextWrapping="Wrap"
-                VerticalScrollBarVisibility="Visible" />
+                VerticalScrollBarVisibility="Visible"
+                />
         </Grid>
     </Grid>
 </UserControl>

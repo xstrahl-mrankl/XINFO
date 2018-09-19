@@ -131,6 +131,10 @@ Public Class XIUC03_Imperium
         ' This call is required by the designer.
         InitializeComponent()
 
+        System.Threading.Thread.CurrentThread.CurrentCulture = New CultureInfo("EN")
+        System.Threading.Thread.CurrentThread.CurrentUICulture = New CultureInfo("EN")
+
+
         ' Add any initialization after the InitializeComponent() call.
 
         Me.LBL03_NrOfAllItems.DataContext = Me
