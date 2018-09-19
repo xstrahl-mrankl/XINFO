@@ -1,0 +1,194 @@
+﻿<Window x:Class="XIWW001_MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:XINFO"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:p="clr-namespace:XINFO.My.Resources"
+        Name="XIWWmain"
+        Title="{x:Static p:Resources.XINFO_Main_000}"
+        Width="1000"
+        Height="800"
+        MinWidth="1000"
+        MinHeight="800"
+        Icon="/XINFO;component/Resources/Images/XInfo.ico"
+        ResizeMode="CanResizeWithGrip"
+        mc:Ignorable="d">
+
+    <Grid Name="XINFOMainGrid" Background="{StaticResource ResourceKey=Xstrahl_SCB_Purple020}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Name="XINFOGridMenu"
+              Margin="0,0,0,0"
+              IsEnabled="{Binding XINFOmenu}">
+            <Grid.Background>
+                <LinearGradientBrush MappingMode="RelativeToBoundingBox" StartPoint="0.5,0" EndPoint="0.5,1">
+                    <GradientStop Color="{DynamicResource Xstrahl_Purple020}" />
+                    <GradientStop Offset="1" Color="{DynamicResource Xstrahl_Purple100}" />
+                </LinearGradientBrush>
+            </Grid.Background>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="10" />
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="10" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5" />
+                <RowDefinition Height="82" />
+                <RowDefinition Height="30" />
+                <RowDefinition Height="5" />
+            </Grid.RowDefinitions>
+
+            <Button Name="BTN_ErrorCodes"
+                    Grid.Row="1"
+                    Grid.Column="1"
+                    Click="OpenMyUserControl"
+                    Content="{x:Static p:Resources.XINFO_Main_001}"
+                    IsEnabled="True"
+                    Style="{StaticResource STLMenuButton01}">
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource Xstrahl_Purple020}" />
+                </Button.Background>
+                <Button.Tag>
+                    <ImageSource>../Resources/Images/xinfo_error_codes.png</ImageSource>
+                </Button.Tag>
+
+            </Button>
+            <Button Name="BTN_Manuals"
+                    Grid.Row="1"
+                    Grid.Column="3"
+                    Click="OpenMyUserControl"
+                    Content="{x:Static p:Resources.XINFO_Main_002}"
+                    IsEnabled="True"
+                    Style="{StaticResource STLMenuButton01}">
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource Xstrahl_Purple020}" />
+                </Button.Background>
+                <Button.Tag>
+                    <ImageSource>../Resources/Images/xinfo_manuals.png</ImageSource>
+                </Button.Tag>
+
+            </Button>
+
+            <Button Name="BTN_Imperium"
+                    Grid.Row="1"
+                    Grid.Column="5"
+                    Click="OpenMyUserControl"
+                    Content="{x:Static p:Resources.XINFO_Main_004}"
+                    IsEnabled="True"
+                    Style="{StaticResource STLMenuButton01}">
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource Xstrahl_Purple020}" />
+                </Button.Background>
+                <Button.Tag>
+                    <ImageSource>../Resources/Images/XInfo_imperium.png</ImageSource>
+                </Button.Tag>
+
+            </Button>
+
+            <Button Name="BTN_Exit"
+                    Grid.Row="1"
+                    Grid.Column="8"
+                    Click="XInfoExit"
+                    Content="{x:Static p:Resources.XINFO_Main_003}"
+                    IsEnabled="True"
+                    Style="{StaticResource STLMenuButton01}">
+                <Button.Background>
+                    <SolidColorBrush Color="{DynamicResource Xstrahl_Red040}" />
+                </Button.Background>
+                <Button.Tag>
+                    <ImageSource>../Resources/Images/xinfo_exit.png</ImageSource>
+                </Button.Tag>
+            </Button>
+
+        </Grid>
+
+
+
+        <StatusBar Name="STTSBR"
+                   Grid.Row="4"
+                   Height="auto"
+                   HorizontalAlignment="Stretch"
+                   VerticalAlignment="Top">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid Margin="0,0,15,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <StatusBarItem Grid.Column="0"
+                           Margin="2,0,0,2"
+                           HorizontalContentAlignment="Stretch">
+                <Label x:Name="LBLmain_StatusChanges"
+                       Height="Auto"
+                       BorderThickness="1"
+                       Content="">
+                    <Label.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource Xstrahl_Purple100}" />
+                    </Label.BorderBrush>
+                </Label>
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="1" Margin="0,0,0,2">
+                <Label x:Name="LBLmain_ExportStatus"
+                       MinWidth="150"
+                       Margin="0"
+                       BorderThickness="1"
+                       Content="">
+                    <Label.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource Xstrahl_Purple100}" />
+                    </Label.BorderBrush>
+                </Label>
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="2" Margin="0,0,0,2">
+                <Label x:Name="LBLmain_NetworkStatus"
+                       MinWidth="150"
+                       BorderThickness="1"
+                       Content="">
+                    <Label.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource Xstrahl_Purple100}" />
+                    </Label.BorderBrush>
+                </Label>
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="3" Margin="0,0,0,2">
+                <Label x:Name="LBLmain_DateTime"
+                       BorderThickness="1"
+                       Content="Date and Time">
+                    <Label.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource Xstrahl_Purple100}" />
+                    </Label.BorderBrush>
+                </Label>
+            </StatusBarItem>
+            <StatusBarItem Grid.Column="4" Margin="0,0,0,2">
+                <Label x:Name="LBLmain_XInfoVersion"
+                       BorderThickness="1"
+                       Content="XINFO Version">
+                    <Label.BorderBrush>
+                        <SolidColorBrush Color="{DynamicResource Xstrahl_Purple100}" />
+                    </Label.BorderBrush>
+                </Label>
+            </StatusBarItem>
+        </StatusBar>
+
+    </Grid>
+</Window>

@@ -1,0 +1,1740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorCode_00001" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00002" xml:space="preserve">
+    <value>Division by Zero - Division med nul</value>
+  </data>
+  <data name="ErrorCode_00003" xml:space="preserve">
+    <value>Divide overflow - Divider overløb</value>
+  </data>
+  <data name="ErrorCode_00004" xml:space="preserve">
+    <value>kV too high - kV for høj</value>
+  </data>
+  <data name="ErrorCode_00005" xml:space="preserve">
+    <value>mA too high - mA for høj</value>
+  </data>
+  <data name="ErrorCode_00006" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00007" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00008" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00009" xml:space="preserve">
+    <value>Focal spot error - Fokuspunktfejl</value>
+  </data>
+  <data name="ErrorCode_00010" xml:space="preserve">
+    <value>Bipolar status error - Fejl topolet status</value>
+  </data>
+  <data name="ErrorCode_00011" xml:space="preserve">
+    <value>Generator over kV</value>
+  </data>
+  <data name="ErrorCode_00012" xml:space="preserve">
+    <value>Generator over mA</value>
+  </data>
+  <data name="ErrorCode_00013" xml:space="preserve">
+    <value>Converter current - Omformerstrøm</value>
+  </data>
+  <data name="ErrorCode_00014" xml:space="preserve">
+    <value>Converter voltage - Omformerspænding</value>
+  </data>
+  <data name="ErrorCode_00015" xml:space="preserve">
+    <value>No cooler flow - Intet kølerflow</value>
+  </data>
+  <data name="ErrorCode_00016" xml:space="preserve">
+    <value>Check cooling system - Kontroller kølesystem</value>
+  </data>
+  <data name="ErrorCode_00017" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00018" xml:space="preserve">
+    <value>kV too low - kV for lav</value>
+  </data>
+  <data name="ErrorCode_00019" xml:space="preserve">
+    <value>mA too low - mA for lav</value>
+  </data>
+  <data name="ErrorCode_00020" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00021" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00022" xml:space="preserve">
+    <value>X-Ray decay too slow - Røntgenstråle-henfald for langsomt</value>
+  </data>
+  <data name="ErrorCode_00023" xml:space="preserve">
+    <value>Contactor Dropout - Kontaktorafbrydelse</value>
+  </data>
+  <data name="ErrorCode_00024" xml:space="preserve">
+    <value>Residual kV too high - Resterende kV for høj</value>
+  </data>
+  <data name="ErrorCode_00025" xml:space="preserve">
+    <value>Residual mA too high - Resterende mA for høj</value>
+  </data>
+  <data name="ErrorCode_00026" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00027" xml:space="preserve">
+    <value>Communication delay - Kommunikationsforsinkelse</value>
+  </data>
+  <data name="ErrorCode_00028" xml:space="preserve">
+    <value>All filters in box - Alle filtre i boks</value>
+  </data>
+  <data name="ErrorCode_00029" xml:space="preserve">
+    <value>Two filters removed - To filtre fjernet</value>
+  </data>
+  <data name="ErrorCode_00030" xml:space="preserve">
+    <value>Please fit filter - Monter filter</value>
+  </data>
+  <data name="ErrorCode_00031" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00032" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00033" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00034" xml:space="preserve">
+    <value>Bipolar kV matching failure - Topolet kV tilpasningsfejl</value>
+  </data>
+  <data name="ErrorCode_00035" xml:space="preserve">
+    <value>Bipolar mA matching failure - Topolet mA tilpasningsfejl</value>
+  </data>
+  <data name="ErrorCode_00036" xml:space="preserve">
+    <value>Feedback open circuit - Feedback åbent kredsløb</value>
+  </data>
+  <data name="ErrorCode_00037" xml:space="preserve">
+    <value>Heatseat sink temperature - Kølelegemetemperatur</value>
+  </data>
+  <data name="ErrorCode_00038" xml:space="preserve">
+    <value>High calibration error - Fejl høj kalibrering</value>
+  </data>
+  <data name="ErrorCode_00039" xml:space="preserve">
+    <value>Low calibration error - Fejl lav kalibrering</value>
+  </data>
+  <data name="ErrorCode_00040" xml:space="preserve">
+    <value>Anode over mA</value>
+  </data>
+  <data name="ErrorCode_00041" xml:space="preserve">
+    <value>Anode under mA</value>
+  </data>
+  <data name="ErrorCode_00042" xml:space="preserve">
+    <value>Less than 5 kV reached - Under 5 kV nået</value>
+  </data>
+  <data name="ErrorCode_00043" xml:space="preserve">
+    <value>Interlock to generator lost - Aflåsning til generator mistet</value>
+  </data>
+  <data name="ErrorCode_00044" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00045" xml:space="preserve">
+    <value>Prohibited exposure - Forbudt eksponering</value>
+  </data>
+  <data name="ErrorCode_00046" xml:space="preserve">
+    <value>Uninitialized filter - Ikkeinitialiseret filter</value>
+  </data>
+  <data name="ErrorCode_00047" xml:space="preserve">
+    <value>Bad applicator data - Dårlige applikator-data</value>
+  </data>
+  <data name="ErrorCode_00048" xml:space="preserve">
+    <value>Bad dose calibration - Dårlig dosiskalibrering</value>
+  </data>
+  <data name="ErrorCode_00049" xml:space="preserve">
+    <value>Exposure not entered - Eksponering ikke indtastet</value>
+  </data>
+  <data name="ErrorCode_00050" xml:space="preserve">
+    <value>No filter selected - Intet filter valgt</value>
+  </data>
+  <data name="ErrorCode_00051" xml:space="preserve">
+    <value>No Applicator Chosen - Ingen applikator valgt</value>
+  </data>
+  <data name="ErrorCode_00052" xml:space="preserve">
+    <value>Bad temperature - Dårlig temperatur</value>
+  </data>
+  <data name="ErrorCode_00053" xml:space="preserve">
+    <value>Bad pressure - Dårligt tryk</value>
+  </data>
+  <data name="ErrorCode_00054" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00055" xml:space="preserve">
+    <value>X-Ray Off Signal Open to Power Up - Tænd røntgensignal åben til opstart</value>
+  </data>
+  <data name="ErrorCode_00056" xml:space="preserve">
+    <value>Shutdown by safety 1 - Nedlukning af Sikkerhed 1</value>
+  </data>
+  <data name="ErrorCode_00057" xml:space="preserve">
+    <value>Shutdown by safety 2 - Nedlukning af Sikkerhed 2</value>
+  </data>
+  <data name="ErrorCode_00058" xml:space="preserve">
+    <value>Shutdown by cooler flow - (Nedlukning af kølerflow</value>
+  </data>
+  <data name="ErrorCode_00059" xml:space="preserve">
+    <value>Shutdown by cooler temp - Nedlukning af kølertemp</value>
+  </data>
+  <data name="ErrorCode_00060" xml:space="preserve">
+    <value>Contactor closed at power up - Kontaktor lukket ved opstart</value>
+  </data>
+  <data name="ErrorCode_00061" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00062" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00063" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00064" xml:space="preserve">
+    <value>System has RESET - Systemet har NULSTILLET</value>
+  </data>
+  <data name="ErrorCode_00065" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00066" xml:space="preserve">
+    <value>Key turned during exposure - Nøgle drejet under eksponering</value>
+  </data>
+  <data name="ErrorCode_00067" xml:space="preserve">
+    <value>High kV demand in Xoff - Højt kV krav i Sluk røntgen</value>
+  </data>
+  <data name="ErrorCode_00068" xml:space="preserve">
+    <value>High mA demand in Xoff - Højt mA krav i Sluk røntgen</value>
+  </data>
+  <data name="ErrorCode_00069" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00070" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00071" xml:space="preserve">
+    <value>Droop cal. too high - Fald kal. for højt</value>
+  </data>
+  <data name="ErrorCode_00072" xml:space="preserve">
+    <value>DAC offset too high - DAO offset for høj</value>
+  </data>
+  <data name="ErrorCode_00073" xml:space="preserve">
+    <value>DAC range problem - DAC mængde problem</value>
+  </data>
+  <data name="ErrorCode_00074" xml:space="preserve">
+    <value>ADC zero offset too high - ADO nulpunktsforskydning for høj</value>
+  </data>
+  <data name="ErrorCode_00075" xml:space="preserve">
+    <value>ADC range problem - ADO mængde problem</value>
+  </data>
+  <data name="ErrorCode_00076" xml:space="preserve">
+    <value>ADC calibration lost - ADO kalibrering mistet</value>
+  </data>
+  <data name="ErrorCode_00077" xml:space="preserve">
+    <value>Bad generator table in PROM - Dårlig generator tabel i PROM</value>
+  </data>
+  <data name="ErrorCode_00078" xml:space="preserve">
+    <value>kV breakdown lockout - Spærring på grund af kV sammenbrud</value>
+  </data>
+  <data name="ErrorCode_00079" xml:space="preserve">
+    <value>X-Ray OFF I/O problem - Sluk røntgen I / O problem</value>
+  </data>
+  <data name="ErrorCode_00080" xml:space="preserve">
+    <value>Anode decay too slow - Anode-henfald for langsomt</value>
+  </data>
+  <data name="ErrorCode_00081" xml:space="preserve">
+    <value>Interlock dropout - Afbrydelse af aflåsning</value>
+  </data>
+  <data name="ErrorCode_00082" xml:space="preserve">
+    <value>Interrupted by HS temp - Afbrudt af køleleg. temp</value>
+  </data>
+  <data name="ErrorCode_00083" xml:space="preserve">
+    <value>Not used - Ikke i brug</value>
+  </data>
+  <data name="ErrorCode_00084" xml:space="preserve">
+    <value>Dual door interlock failure - Dobbelt døraflåsningsfejl</value>
+  </data>
+  <data name="ErrorCode_00085" xml:space="preserve">
+    <value>Overriding mandatory WU - Tilsidesætter obligatorisk WU</value>
+  </data>
+  <data name="ErrorCode_00086" xml:space="preserve">
+    <value>Exposure param error - Eksponeringsparameterfejl</value>
+  </data>
+  <data name="ErrorCode_00087" xml:space="preserve">
+    <value>Anode residual kV - Anode resterende kV</value>
+  </data>
+  <data name="ErrorCode_00088" xml:space="preserve">
+    <value>Anode residual mA - Anode resterende mA</value>
+  </data>
+  <data name="ErrorCode_00089" xml:space="preserve">
+    <value>No mA at switch ON - Ingen mA ved tænding</value>
+  </data>
+  <data name="ErrorCode_00090" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00091" xml:space="preserve">
+    <value>Shutdown by residual kV - Nedlukning af resterende kV</value>
+  </data>
+  <data name="ErrorCode_00092" xml:space="preserve">
+    <value>Shutdown by residual mA - Nedlukning af resterende mA</value>
+  </data>
+  <data name="ErrorCode_00093" xml:space="preserve">
+    <value>Timer interrupt late - Timer afbrudt sent</value>
+  </data>
+  <data name="ErrorCode_00094" xml:space="preserve">
+    <value>Generator not ready - Generator ikke klar</value>
+  </data>
+  <data name="ErrorCode_00095" xml:space="preserve">
+    <value>High energy discharge - Høj energiudladning</value>
+  </data>
+  <data name="ErrorCode_00096" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00097" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00098" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00099" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00100" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00101" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00102" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00103" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00104" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00105" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00106" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00107" xml:space="preserve">
+    <value>Generator interlock problem - Generator aflåsningsproblem</value>
+  </data>
+  <data name="ErrorCode_00108" xml:space="preserve">
+    <value>App factor required - App faktor kræves</value>
+  </data>
+  <data name="ErrorCode_00109" xml:space="preserve">
+    <value>Dose requested too high - Den ønskede dosis er for høj </value>
+  </data>
+  <data name="ErrorCode_00110" xml:space="preserve">
+    <value>LCD failure - LCD fejl</value>
+  </data>
+  <data name="ErrorCode_00111" xml:space="preserve">
+    <value>Low dose rate error - Fejl lav dosishastighed</value>
+  </data>
+  <data name="ErrorCode_00112" xml:space="preserve">
+    <value>Emergency OFF - Nødstop</value>
+  </data>
+  <data name="ErrorCode_00113" xml:space="preserve">
+    <value>Power ON light failed - Fejl tænd-lampe</value>
+  </data>
+  <data name="ErrorCode_00114" xml:space="preserve">
+    <value>X-Ray ON light failed - Fejl TÆND røntgen-lampe</value>
+  </data>
+  <data name="ErrorCode_00115" xml:space="preserve">
+    <value>Program not specified - Program ikke specificeret</value>
+  </data>
+  <data name="ErrorCode_00116" xml:space="preserve">
+    <value>Exposure stopped by key - Eksponering stoppet af nøgle</value>
+  </data>
+  <data name="ErrorCode_00117" xml:space="preserve">
+    <value>Power lost - Ingen strøm</value>
+  </data>
+  <data name="ErrorCode_00118" xml:space="preserve">
+    <value>mA value not available - mA-værdi ikke tilgængelig</value>
+  </data>
+  <data name="ErrorCode_00119" xml:space="preserve">
+    <value>kV value not available - kV-værdi ikke tilgængelig)</value>
+  </data>
+  <data name="ErrorCode_00120" xml:space="preserve">
+    <value>Stopped by backup timer - Stoppet af backup-timer</value>
+  </data>
+  <data name="ErrorCode_00121" xml:space="preserve">
+    <value>High dose rate error - Fejl høj dosishastighed</value>
+  </data>
+  <data name="ErrorCode_00122" xml:space="preserve">
+    <value>Applicator encoding error - Applikatorindkodningsfejl</value>
+  </data>
+  <data name="ErrorCode_00123" xml:space="preserve">
+    <value>Filter encoding error - Filterindkodningsfejl</value>
+  </data>
+  <data name="ErrorCode_00124" xml:space="preserve">
+    <value>Generator not stopping - Generatoren stopper ikke</value>
+  </data>
+  <data name="ErrorCode_00125" xml:space="preserve">
+    <value>Generator not starting - Generatoren starter ikke</value>
+  </data>
+  <data name="ErrorCode_00126" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00127" xml:space="preserve">
+    <value>Generator not set-up - Generator ikke indstillet</value>
+  </data>
+  <data name="ErrorCode_00128" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00129" xml:space="preserve">
+    <value>Maintenance due - Tid til vedligeholdelse</value>
+  </data>
+  <data name="ErrorCode_00130" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00131" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00132" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00133" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00134" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00135" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00136" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00137" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00138" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00139" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00140" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00141" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00142" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00143" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00144" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00145" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00146" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00147" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00148" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00149" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00150" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00151" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00152" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00153" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00154" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00155" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00156" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00157" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00158" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00159" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00160" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00161" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00162" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00163" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00164" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00165" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00166" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00167" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00168" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00169" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00170" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00171" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00172" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00173" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00174" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00175" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00176" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00177" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00178" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00179" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00180" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00181" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00182" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00183" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00184" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00185" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00186" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00187" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00188" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00189" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00190" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00191" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00192" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00193" xml:space="preserve">
+    <value>Generator interlock open - Generatoraflåsning åben</value>
+  </data>
+  <data name="ErrorCode_00194" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00195" xml:space="preserve">
+    <value>PC data interlock - PC data spærring</value>
+  </data>
+  <data name="ErrorCode_00196" xml:space="preserve">
+    <value>Door open - Dør åben</value>
+  </data>
+  <data name="ErrorCode_00197" xml:space="preserve">
+    <value>Room interlock open - Rumaflåsning åben</value>
+  </data>
+  <data name="ErrorCode_00198" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00199" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00200" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00201" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00202" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00203" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00204" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00205" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00206" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00207" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00208" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00209" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00210" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00211" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00212" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00213" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00214" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00215" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00216" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00217" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00218" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00219" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00220" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00221" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00222" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00223" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00224" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00225" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00226" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00227" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00228" xml:space="preserve">
+    <value>Watchdog failure - Watchdog fejl</value>
+  </data>
+  <data name="ErrorCode_00229" xml:space="preserve">
+    <value>Background lockup - Baggrundsblokering</value>
+  </data>
+  <data name="ErrorCode_00230" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00231" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00232" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00233" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00234" xml:space="preserve">
+    <value>Other trap - Anden fejl</value>
+  </data>
+  <data name="ErrorCode_00235" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00236" xml:space="preserve">
+    <value>Bad code executed - Dårlig kode udført</value>
+  </data>
+  <data name="ErrorCode_00237" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00238" xml:space="preserve">
+    <value>No real time clock - Intet realtidsur</value>
+  </data>
+  <data name="ErrorCode_00239" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00240" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00241" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00242" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00243" xml:space="preserve">
+    <value>Processor clock fault - Fejl processorur</value>
+  </data>
+  <data name="ErrorCode_00244" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00245" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00246" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00247" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00248" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00249" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00250" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00251" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00252" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00253" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00254" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00255" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00256" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00257" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00258" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00259" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00260" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00261" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00262" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00263" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00264" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00265" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00266" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00267" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00268" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00269" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00270" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00001" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00002" xml:space="preserve">
+    <value>Vises, hvis en intern beregning resulterer i en division med nul. Kræver, at strømtilførslen tændes og slukkes.</value>
+  </data>
+  <data name="ErrorDesc_00003" xml:space="preserve">
+    <value>Vises, hvis en intern beregning resulterer i en division med nul. Kræver, at strømtilførslen tændes og slukkes.</value>
+  </data>
+  <data name="ErrorDesc_00004" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatorens kV overskrider den ønskede værdi. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00005" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatorens mA overskrider den ønskede værdi. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00006" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00007" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00008" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00009" xml:space="preserve">
+    <value>Generatorfejl. Vises efter en opstart, hvis sensor detektionen af et dobbeltfokuspunkt filaments indstilling ændres.</value>
+  </data>
+  <data name="ErrorDesc_00010" xml:space="preserve">
+    <value>Generatorfejl. Vises efter opstarten, hvis sensor detektionen af en anodetank ændres.</value>
+  </data>
+  <data name="ErrorDesc_00011" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatorens kV overskrider en indstillet værdi i kombination med røntgenrørs- og generatordata. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00012" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatorens mA overskrider en indstillet værdi i kombination med røntgenrørs- og generatordata. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00013" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis en intern strømgrænse overskrides i generatordrevets elektronik. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00014" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis en intern spændingsgrænse overskrides i generatordrevets elektronik. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00015" xml:space="preserve">
+    <value>Vises, hvis kølemiddelgennemstrømningshastigheden er under den interne indstilling. Ingen låsefejl. Nulstilles automatisk. Denne fejl vil slå sikkerhedskontaktoren fra.</value>
+  </data>
+  <data name="ErrorDesc_00016" xml:space="preserve">
+    <value>Vises, hvis kølemiddeltemperaturen overskrider den interne kølers grænse. Ingen låsefejl. Nulstilles automatisk. Denne fejl vil slå sikkerhedskontaktoren fra.</value>
+  </data>
+  <data name="ErrorDesc_00017" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00018" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatorens kV ikke når den ønskede værdi inden for en defineret tidsperiode. Låsefejl</value>
+  </data>
+  <data name="ErrorDesc_00019" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatorens mA ikke når den ønskede værdi inden for en defineret tidsperiode. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00020" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00021" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00022" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis kV-henfaldet ved afslutningen af eksponeringen tager for lang tid. Systemets status er fortsat at røntgenstrålen er tændt, indtil kV-tærsklen er nået.</value>
+  </data>
+  <data name="ErrorDesc_00023" xml:space="preserve">
+    <value>Vises, fordi brugeren har trykket på knappen X-Ray ON (TÆND røntgen) for hurtigt. Vent, indtil knappen X-Ray ON (TÆND røntgen) lyser grønt og indtil pc-skærmen viser Klar til eksponering, før du trykker på knappen X-Ray ON (TÆND røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00024" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatorens kV overskrider en vis værdi i X-Ray OFF (SLUK røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00025" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatorens mA overskrider en vis værdi i X-Ray OFF (SLUK røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00026" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00027" xml:space="preserve">
+    <value>Vises, hvis kommunikationen fra generatoren svigter. Dette vil hindre eller afslutte X-Ray ON (TÆND røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00028" xml:space="preserve">
+    <value>Vises, hvis alle filtre er i vægboksen, når et filter vælges (kun visse systemer). Ingen låsefejl. Nulstilles automatisk.</value>
+  </data>
+  <data name="ErrorDesc_00029" xml:space="preserve">
+    <value>Vises, hvis mere end et filter mangler fra vægboksen, når et filter vælges (kun visse systemer). Ingen låsefejl. Nulstilles automatisk.</value>
+  </data>
+  <data name="ErrorDesc_00030" xml:space="preserve">
+    <value>Vises, hvis intet filter er monteret på den nederste rørsamling, når et filter vælges. Ingen låsefejl. Nulstilles automatisk.</value>
+  </data>
+  <data name="ErrorDesc_00031" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00032" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00033" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00034" xml:space="preserve">
+    <value>Generatorfejl. Vises i topolede systemer, når målingerne af anode og katode kV afviger med en defineret mængde. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00035" xml:space="preserve">
+    <value>Generatorfejl. Vises i topolede systemer, når målingerne af anode og katode mA afviger med en defineret mængde. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00036" xml:space="preserve">
+    <value>Generatorfejl. Vises mens forbindelsen til PCB kontrollen fra en filament feedback PCB er åbent kredsløb (CP-modeller).</value>
+  </data>
+  <data name="ErrorDesc_00037" xml:space="preserve">
+    <value>Generatorfejl. Vises mens kølelegemetermostaten indikerer en høj temperatur.</value>
+  </data>
+  <data name="ErrorDesc_00038" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis den indtastede værdi for kalibreringsspændingen i en initialiseringsproces er for høj.</value>
+  </data>
+  <data name="ErrorDesc_00039" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis den indtastede værdi for kalibreringsspændingen i en initialiseringsproces er for lav.</value>
+  </data>
+  <data name="ErrorDesc_00040" xml:space="preserve">
+    <value>Generatorfejl. Vises i topolede systemer, hvis anodetank mA overskrider den ønskede værdi. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00041" xml:space="preserve">
+    <value>Generatorfejl. Vises i topolede systemer, hvis anodetanken mA ikke når den ønskede værdi inden for en defineret tidsperiode. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00042" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatoren ikke når 5 kV inden for en defineret tidsperiode efter en TÆND røntgen-kommando modtages. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00043" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis en eksponering afsluttes ved at fjerne aflåsningsindgangen til generatoren. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00044" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00045" xml:space="preserve">
+    <value>Vises, hvis den tid, der er indtastet i en tidsbehandling, overskrider den indstillede tidsgrænse. Denne fejl vises, indtil en tid indtastes, der er i overensstemmelse med den indstillede tidsgrænse. (kan forårsages under en dosisbehandling)</value>
+  </data>
+  <data name="ErrorDesc_00046" xml:space="preserve">
+    <value>Vises, hvis et ikke-initialiseret filter vælges, eller hvis nul-værdier detekteres for følgende: kV, mA, HVL, type HVL, dimension eller indkodning.</value>
+  </data>
+  <data name="ErrorDesc_00047" xml:space="preserve">
+    <value>Vises, hvis en ikke-initialiseret applikator vælges. En ugyldig form eller nul-værdier i følgende: vidde, bredde for rektangulær applikator, længde eller indkodning.</value>
+  </data>
+  <data name="ErrorDesc_00048" xml:space="preserve">
+    <value>Vises, hvis et filter vælges til en dosiseksponering med en ugyldig referenceapplikator eller nul-værdier for optællinger/ sekund eller optællinger/ME.</value>
+  </data>
+  <data name="ErrorDesc_00049" xml:space="preserve">
+    <value>Vises, hvis der er trykket på røntgenstråleknappen og den interne FORESPØRGSELSstatus indikerer, at eksponeringen ikke er indstillet. Denne fejl vises, indtil en anden behandling indstilles.</value>
+  </data>
+  <data name="ErrorDesc_00050" xml:space="preserve">
+    <value>Vises, hvis der er trykket på røntgen-knappen og den interne FORESPØRGSELS-status indikerer, at filteret ikke er indstillet. Denne fejl vises, indtil en anden behandling indstilles.</value>
+  </data>
+  <data name="ErrorDesc_00051" xml:space="preserve">
+    <value>Vises, hvis der er trykket på røntgen-knappen og den interne FORESPØRGSELS-status indikerer, at applikatoren ikke er indstillet. Denne fejl vises, indtil en anden behandling indstilles.</value>
+  </data>
+  <data name="ErrorDesc_00052" xml:space="preserve">
+    <value>Vises, hvis temperaturen (i grader celsius), der læses fra transduceren er under et minimum (10) eller over et maksimum (35). Kun dosissystemer. Denne fejl vises så længe temperaturen er ugyldig.</value>
+  </data>
+  <data name="ErrorDesc_00053" xml:space="preserve">
+    <value>Vises, hvis trykket (i millibar), der læses fra transduceren er under et minimum (700) eller over et maksimum (1200). Kun dosissystemer. Denne fejl vises så længe trykket er ugyldigt.</value>
+  </data>
+  <data name="ErrorDesc_00054" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00055" xml:space="preserve">
+    <value>Vises, hvis knappen X-Ray OFF (SLUK røntgen) er åben – kredsløbet startes op.</value>
+  </data>
+  <data name="ErrorDesc_00056" xml:space="preserve">
+    <value>Vises, hvis røntgenstrålen stoppes på grund af, at dørkontakten er åben. Låsefejl, der kræver, at et nyt X-Ray ON (TÆND røntgen)signal indstilles.</value>
+  </data>
+  <data name="ErrorDesc_00057" xml:space="preserve">
+    <value>Vises, hvis røntgenstrålen stoppes på grund af, at den anden dør-/rumaflåsningskontakt åbnes. Låsefejl, der kræver, at et nyt X-Ray ON (TÆND røntgen)-signal indstilles.</value>
+  </data>
+  <data name="ErrorDesc_00058" xml:space="preserve">
+    <value>Vises, hvis røntgenstrålen stoppes på grund af, at kølerflowkontakten åbnes. Låsefejl, der kræver, at et nyt X-Ray ON (TÆND røntgen)signal indstilles.</value>
+  </data>
+  <data name="ErrorDesc_00059" xml:space="preserve">
+    <value>Vises, hvis røntgenstrålen stoppes på grund af, at kølertempkontakten åbnes. Låsefejl, der kræver, at et nyt X-Ray ON (TÆND røntgen)signal indstilles.</value>
+  </data>
+  <data name="ErrorDesc_00060" xml:space="preserve">
+    <value>Vises ved opstart, hvis sikkerhedskontaktoren tilkobles, men ikke aktiveres.</value>
+  </data>
+  <data name="ErrorDesc_00061" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00062" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00063" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00064" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis processoren i generatoren har nulstillet.</value>
+  </data>
+  <data name="ErrorDesc_00065" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00066" xml:space="preserve">
+    <value>Vises, hvis røntgenstrålen stoppes ved at kontrolpanelets nøgle drejes fra HT (position 3), røntgenaktiveringspositionen. Ikke en låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00067" xml:space="preserve">
+    <value>Generatorfejl</value>
+  </data>
+  <data name="ErrorDesc_00068" xml:space="preserve">
+    <value>Generatorfejl</value>
+  </data>
+  <data name="ErrorDesc_00069" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00070" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00071" xml:space="preserve">
+    <value>Generatorfejl</value>
+  </data>
+  <data name="ErrorDesc_00072" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis digital til analog omformerens (DAO) offsetspænding er for høj. Dette vil forhindre en eksponering.</value>
+  </data>
+  <data name="ErrorDesc_00073" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis digital til analog omformerens (DAO) datamængde er forkert. Dette vil forhindre en eksponering.</value>
+  </data>
+  <data name="ErrorDesc_00074" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis analog til digital omformerens (ADO) offsetspænding er for høj. Dette vil forhindre en eksponering.</value>
+  </data>
+  <data name="ErrorDesc_00075" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis analog til digital omformerens (ADO) datamængde er forkert. Dette vil forhindre en eksponering.</value>
+  </data>
+  <data name="ErrorDesc_00076" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis analog til digital omformerens (ADO) kalibrering er mistet. Dette vil forhindre en eksponering</value>
+  </data>
+  <data name="ErrorDesc_00077" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatortypedataene er beskadiget. Dette vil forhindre en eksponering.</value>
+  </data>
+  <data name="ErrorDesc_00078" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis røntgenstrålerne er blevet afsluttet af tre hændelser ved successivt lavere kV-værdier. Dette vil forhindre en eksponering.</value>
+  </data>
+  <data name="ErrorDesc_00079" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis generatoren modtager en igangsættelse af X-Ray ON (TÆND røntgen), men X-Ray OFF (SLUK røntgen) spærreledningen ikke er aktiveret (forsynet med strøm).</value>
+  </data>
+  <data name="ErrorDesc_00080" xml:space="preserve">
+    <value>Generatorfejl. Vises i topolede systemer, hvis henfaldet af anode kV’en varer for længe ved afslutningen af eksponeringen. Systemets status er fortsat at røntgenstrålen er tændt, indtil kV-tærsklen er nået.</value>
+  </data>
+  <data name="ErrorDesc_00081" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis en eksponering afsluttes fordi et aflåsningssignal mistes. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00082" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis en eksponering afsluttes af kølelegemets termostat. Låsefejl.</value>
+  </data>
+  <data name="ErrorDesc_00083" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis de enpolede eller topolede tabeller ikke er kompatible.</value>
+  </data>
+  <data name="ErrorDesc_00084" xml:space="preserve">
+    <value>Vises, hvis de to dørsensorer ikke samarbejder, når de er konfigureret til det. Dette vil forhindre, at røntgenstrålerne tændes.</value>
+  </data>
+  <data name="ErrorDesc_00085" xml:space="preserve">
+    <value>Generatorfejl. Ikke i brug i dette system.</value>
+  </data>
+  <data name="ErrorDesc_00086" xml:space="preserve">
+    <value>Generatorfejl</value>
+  </data>
+  <data name="ErrorDesc_00087" xml:space="preserve">
+    <value>Generatorfejl. Vises i topolede systemer, hvis anode generator tank kV overskrider en vis værdi i X-Ray OFF (SLUK røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00088" xml:space="preserve">
+    <value>Generatorfejl. Vises i topolede systemer, hvis anode generator tank mA overskrider en vis værdi i X-Ray OFF (SLUK røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00089" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis den målte mA bliver på nul efter en specificeret tid.</value>
+  </data>
+  <data name="ErrorDesc_00090" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00091" xml:space="preserve">
+    <value>Generatorfejl. Låsefejl. Vises, hvis en fejl for resterende kV har afsluttet røntgenstrålerne</value>
+  </data>
+  <data name="ErrorDesc_00092" xml:space="preserve">
+    <value>Generatorfejl. Låsefejl. Vises, hvis en fejl for resterende mA har afsluttet røntgenstrålerne</value>
+  </data>
+  <data name="ErrorDesc_00093" xml:space="preserve">
+    <value>Generatorfejl</value>
+  </data>
+  <data name="ErrorDesc_00094" xml:space="preserve">
+    <value>Generatorfejl</value>
+  </data>
+  <data name="ErrorDesc_00095" xml:space="preserve">
+    <value>Generatorfejl</value>
+  </data>
+  <data name="ErrorDesc_00096" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00097" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00098" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00099" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00100" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00101" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00102" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00103" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00104" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00105" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00106" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00107" xml:space="preserve">
+    <value>Vises, hvis styringen af spærre-relæet ikke resulterer i det korrekte svar fra generatoren.</value>
+  </data>
+  <data name="ErrorDesc_00108" xml:space="preserve">
+    <value>Vises, hvis applikatoren vælges til en dosiseksponering og applikatorfaktoren for den valgte applikator er uden for området. (Skal være over eller lig med 0,8 og under eller lig med 1,2.)</value>
+  </data>
+  <data name="ErrorDesc_00109" xml:space="preserve">
+    <value>Vises, hvis den dosis, der er indtastet i en dosisbehandling, overskrider den indstillede dosisgrænse. Denne fejl vises, indtil en dosis indtastes, der er i overensstemmelse med den indstillede dosisgrænse.</value>
+  </data>
+  <data name="ErrorDesc_00110" xml:space="preserve">
+    <value>Vises, hvis TP2’en ikke kan læse data fra LCD’en. Denne fejl vises, indtil den rettes.</value>
+  </data>
+  <data name="ErrorDesc_00111" xml:space="preserve">
+    <value>Vises, hvis den overvågede dosishastighed under en dosisbehandling er mere en 3 % under den kalibrerede dosishastighed. Forholdet mellem den aktuelle mA og den ønskede mA anvendes til at modificere beregningen på tænd mA rampen. Fejlen afslutter røntgenstrålingen. Fejlen kræver, at nøglen på kontrolpanelet drejes til standby (position 2) og derefter tilbage til HT (position 3) for at slette, før røntgenstrålerne aktiveres.</value>
+  </data>
+  <data name="ErrorDesc_00112" xml:space="preserve">
+    <value>Vises, hvis røntgenstrålen stoppes på grund af, at der trykkes på nødstop-knappen. Røntgenstrålingen genoptages ikke automatisk efter nødstoppet er nulstillet manuelt, men efter der trykkes på knappen X-Ray ON (TÆND røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00113" xml:space="preserve">
+    <value>Vises, hvis den eksterne tænd-lampe ikke kan strømforsynes. Dette vil forhindre, at røntgenstrålerne tændes.</value>
+  </data>
+  <data name="ErrorDesc_00114" xml:space="preserve">
+    <value>Vises, hvis den eksterne TÆND røntgenlampe ikke kan strømforsynes. Dette vil afslutte X-Ray ON (TÆND røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00115" xml:space="preserve">
+    <value>Vises, hvis der er trykket på røntgen-knappen og den interne FORESPØRGSELS-status indikerer, at programmet ikke er indstillet. Denne fejl vises, indtil en anden behandling indstilles.</value>
+  </data>
+  <data name="ErrorDesc_00116" xml:space="preserve">
+    <value>Vises, hvis røntgenstrålen stoppes, fordi kontrolpanelets nøgle er drejet fra HT (position 3) til aktiveringspositionen. Låsefejl, der kræver, at et nyt X-Ray ON (TÆND røntgen)-signal indstilles.</value>
+  </data>
+  <data name="ErrorDesc_00117" xml:space="preserve">
+    <value>Vises, hvis programmet, der overvåger TP2’en gennem kommunikationsledningen, ikke kan modtage data. Programmet vil vise POWER LOST (INGEN STRØM) og vente på, at TP2’en gendannes og, hvis muligt, genoptage. Genoptagelse af røntgenstrålingen kan kun udføres af operatøren.</value>
+  </data>
+  <data name="ErrorDesc_00118" xml:space="preserve">
+    <value>Vises, hvis generatorens mA-grænse (for den ønskede kV) er under den påkrævede behandlings-mA. Dette vil forhindre X-Ray ON (TÆND røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00119" xml:space="preserve">
+    <value>Vises, hvis generatorens kV-grænse er under den påkrævede behandlings-kV. Dette vil forhindre X-Ray ON (TÆND røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00120" xml:space="preserve">
+    <value>Vises, hvis eksponeringen stoppes af backuptimeren. Beregningen af grænsen varierer mellem tids- og dosisbehandlinger. Yderligere eksponering er ikke tilladt. X-Ray ON (TÆND røntgen) vil være tilladt, men afslutningen vil blive gentaget, så snart timeren starter.</value>
+  </data>
+  <data name="ErrorDesc_00121" xml:space="preserve">
+    <value>Vises, hvis den overvågede dosishastighed under en dosisbehandling er mere en 3 % over den kalibrerede dosishastighed. Fejlen afslutter røntgenstrålingen. Fejlen kræver, at nøglen på kontrolpanelet drejes til standby (position 2) og derefter tilbage til HT (position 3) for at slette, før røntgenstrålerne aktiveres.</value>
+  </data>
+  <data name="ErrorDesc_00122" xml:space="preserve">
+    <value>Vises, hvis applikatorens bits ikke passer til den specificerede applikators bits.</value>
+  </data>
+  <data name="ErrorDesc_00123" xml:space="preserve">
+    <value>Vises, hvis filterets bits ikke passer til det specificerede filters bits.</value>
+  </data>
+  <data name="ErrorDesc_00124" xml:space="preserve">
+    <value>Vises, hvis generatoren ikke slukker inden for to sekunder.</value>
+  </data>
+  <data name="ErrorDesc_00125" xml:space="preserve">
+    <value>Vises, hvis generatoren ikke tænder inden for to sekunder.</value>
+  </data>
+  <data name="ErrorDesc_00126" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00127" xml:space="preserve">
+    <value>Vises, hvis generatoren ikke kan indstilles til den ønskede kV eller mA. Dette vil forhindre X-Ray ON (TÆND røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00128" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00129" xml:space="preserve">
+    <value>Generatorfejl. Vises, hvis den aktuelle dato overskrider den valgte dato for rutinemæssig vedligeholdelse. Forhindrer ikke X-Ray ON (TÆND røntgen).</value>
+  </data>
+  <data name="ErrorDesc_00130" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00131" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00132" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00133" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00134" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00135" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00136" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00137" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00138" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00139" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00140" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00141" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00142" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00143" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00144" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00145" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00146" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00147" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00148" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00149" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00150" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00151" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00152" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00153" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00154" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00155" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00156" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00157" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00158" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00159" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00160" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00161" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00162" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00163" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00164" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00165" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00166" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00167" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00168" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00169" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00170" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00171" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00172" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00173" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00174" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00175" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00176" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00177" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00178" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00179" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00180" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00181" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00182" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00183" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00184" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00185" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00186" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00187" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00188" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00189" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00190" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00191" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00192" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00193" xml:space="preserve">
+    <value>Vises, hvis aflåsningen til generatoren er åben. Undertrykt medmindre spærre-relæet er aktiveret.</value>
+  </data>
+  <data name="ErrorDesc_00194" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00195" xml:space="preserve">
+    <value>Vises, hvis TP2’en ikke kan modtage en software interlock fra pc’en i intervaller på mindre end ét sekund med kontrolpanelets nøgle på HT (position 3).</value>
+  </data>
+  <data name="ErrorDesc_00196" xml:space="preserve">
+    <value>Vises, hvis det første sikkerhedssignal ikke detekteres på TP2. Denne fejl vil slå sikkerhedskontaktoren fra.</value>
+  </data>
+  <data name="ErrorDesc_00197" xml:space="preserve">
+    <value>Vises, hvis det andet sikkerhedssignal ikke detekteres på TP2. Denne fejl vil slå sikkerhedskontaktoren fra.</value>
+  </data>
+  <data name="ErrorDesc_00198" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00199" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00200" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00201" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00202" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00203" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00204" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00205" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00206" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00207" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00208" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00209" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00210" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00211" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00212" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00213" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00214" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00215" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00216" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00217" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00218" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00219" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00220" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00221" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00222" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00223" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00224" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00225" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00226" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00227" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00228" xml:space="preserve">
+    <value>Vises, hvis TP2-softwaren ikke kan udløse en watchdog rettidigt igen. Fejlen kan ikke nulstilles. Alvorlig fejl.</value>
+  </data>
+  <data name="ErrorDesc_00229" xml:space="preserve">
+    <value>Vises, hvis TP2’ens baggrundssoftware ikke kan udføres rettidigt. Fejlen kan ikke nulstilles. Alvorlig fejl.</value>
+  </data>
+  <data name="ErrorDesc_00230" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00231" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00232" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00233" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00234" xml:space="preserve">
+    <value>Vises, hvis der opstår en uventet fejl. Fejlen kan ikke nulstilles. Alvorlig fejl</value>
+  </data>
+  <data name="ErrorDesc_00235" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00236" xml:space="preserve">
+    <value>Vises, hvis der detekteres en dårlig instruktion. Fejlen kan ikke nulstilles. Alvorlig fejl</value>
+  </data>
+  <data name="ErrorDesc_00237" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00238" xml:space="preserve">
+    <value>IKKE I BRUG</value>
+  </data>
+  <data name="ErrorDesc_00239" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00240" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00241" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00242" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00243" xml:space="preserve">
+    <value>Vises, hvis der opstår en intern fejl i processoruret. Fejlen kan ikke nulstilles. Alvorlig fejl.</value>
+  </data>
+  <data name="ErrorDesc_00244" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00245" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00246" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00247" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00248" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00249" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00250" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00251" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00252" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00253" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00254" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00255" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00256" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00257" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00258" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00259" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00260" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00261" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00262" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00263" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00264" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00265" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00266" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00267" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00268" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00269" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00270" xml:space="preserve">
+    <value>-</value>
+  </data>
+</root>

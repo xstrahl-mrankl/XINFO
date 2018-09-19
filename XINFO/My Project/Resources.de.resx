@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="XINFO_Main_001" xml:space="preserve">
+    <value>Fehler-Codes</value>
+  </data>
+  <data name="XINFO_Main_002" xml:space="preserve">
+    <value>Handbücher</value>
+  </data>
+  <data name="XINFO_Main_003" xml:space="preserve">
+    <value>Beenden</value>
+  </data>
+  <data name="XINFO_Main_004" xml:space="preserve">
+    <value>Imperium</value>
+  </data>
+  <data name="XINFO_UC03_001" xml:space="preserve">
+    <value>Xstrahl "classic" Database Browser</value>
+  </data>
+  <data name="XINFO_UC03_101" xml:space="preserve">
+    <value>Patient (vollständiger Name)</value>
+  </data>
+  <data name="XINFO_UC03_102" xml:space="preserve">
+    <value>Patient ID</value>
+  </data>
+  <data name="XINFO_UC03_103" xml:space="preserve">
+    <value>Patient Geburtsdatum</value>
+  </data>
+  <data name="XINFO_UC03_104" xml:space="preserve">
+    <value>Patient Bild (Dateiname)</value>
+  </data>
+  <data name="XINFO_UC03_105" xml:space="preserve">
+    <value>Arzt</value>
+  </data>
+  <data name="XINFO_UC03_106" xml:space="preserve">
+    <value>Behandlungsfeld</value>
+  </data>
+  <data name="XINFO_UC03_107" xml:space="preserve">
+    <value>Behandlungsposition</value>
+  </data>
+  <data name="XINFO_UC03_108" xml:space="preserve">
+    <value>Filter Code</value>
+  </data>
+  <data name="XINFO_UC03_109" xml:space="preserve">
+    <value>Applikator Code</value>
+  </data>
+  <data name="XINFO_UC03_110" xml:space="preserve">
+    <value>Behandlungsdatum</value>
+  </data>
+  <data name="XINFO_UC03_111" xml:space="preserve">
+    <value>Uhrzeit Behandlung</value>
+  </data>
+  <data name="XINFO_UC03_112" xml:space="preserve">
+    <value>Filter kV</value>
+  </data>
+  <data name="XINFO_UC03_113" xml:space="preserve">
+    <value>Filter mA</value>
+  </data>
+  <data name="XINFO_UC03_114" xml:space="preserve">
+    <value>Filter HVL</value>
+  </data>
+  <data name="XINFO_UC03_115" xml:space="preserve">
+    <value>Applikator Daten</value>
+  </data>
+  <data name="XINFO_UC03_116" xml:space="preserve">
+    <value>Dosis (erhalten)</value>
+  </data>
+  <data name="XINFO_UC03_117" xml:space="preserve">
+    <value>Zeit (erhalten)</value>
+  </data>
+  <data name="XINFO_UC03_118" xml:space="preserve">
+    <value>Bediener</value>
+  </data>
+  <data name="XINFO_UC03_119" xml:space="preserve">
+    <value>Dosis (festgelegt)</value>
+  </data>
+  <data name="XINFO_UC03_120" xml:space="preserve">
+    <value>Zeit (festgelegt)</value>
+  </data>
+  <data name="XINFO_UC03_121" xml:space="preserve">
+    <value>Fehler-Codes</value>
+  </data>
+  <data name="XINFO_UC03_002" xml:space="preserve">
+    <value>Behandlungen in der DB gefunden</value>
+  </data>
+  <data name="XINFO_UC03_003" xml:space="preserve">
+    <value>Filter anwenden</value>
+  </data>
+  <data name="XINFO_UC03_004" xml:space="preserve">
+    <value>erster Datensatz</value>
+  </data>
+  <data name="XINFO_UC03_005" xml:space="preserve">
+    <value>voriger Datensatz</value>
+  </data>
+  <data name="XINFO_UC03_006" xml:space="preserve">
+    <value>nächster Datensatz</value>
+  </data>
+  <data name="XINFO_UC03_007" xml:space="preserve">
+    <value>letzter Datensatz</value>
+  </data>
+  <data name="XINFO_UC03_008" xml:space="preserve">
+    <value>von</value>
+  </data>
+  <data name="XINFO_UC03_009" xml:space="preserve">
+    <value>Geben Sie Text zum Filtern der Datenbank ein. Geben Sie ein Datum im Format jjjjmmtt ein. Sie können nicht nach der Behandlungszeit suchen.	</value>
+  </data>
+  <data name="XINFO_UC03_016" xml:space="preserve">
+    <value>enthält</value>
+  </data>
+  <data name="XINFO_UC03_011" xml:space="preserve">
+    <value>Finde Datenbank</value>
+  </data>
+  <data name="XINFO_UC03_012" xml:space="preserve">
+    <value>als CSV exportieren</value>
+  </data>
+  <data name="XINFO_UC03_013" xml:space="preserve">
+    <value>als XML exportieren</value>
+  </data>
+  <data name="XINFO_UC03_050" xml:space="preserve">
+    <value>Bitte wählen und bestätigen Sie das Imperium Verzeichnis mit D3KTMNT.DBF</value>
+  </data>
+  <data name="XINFO_UC03_014" xml:space="preserve">
+    <value>als XPS exportieren</value>
+  </data>
+  <data name="XINFO_Style_DocViewer_001" xml:space="preserve">
+    <value>Drucken</value>
+  </data>
+  <data name="XINFO_Style_DocViewer_002" xml:space="preserve">
+    <value>Kopieren</value>
+  </data>
+  <data name="XINFO_Style_DocViewer_003" xml:space="preserve">
+    <value>Vergrößern</value>
+  </data>
+  <data name="XINFO_Style_DocViewer_004" xml:space="preserve">
+    <value>Verkleinern</value>
+  </data>
+  <data name="XINFO_Style_DocViewer_005" xml:space="preserve">
+    <value>aktuelle Größe</value>
+  </data>
+  <data name="XINFO_Style_DocViewer_006" xml:space="preserve">
+    <value>Seitenbreite</value>
+  </data>
+  <data name="XINFO_Style_DocViewer_007" xml:space="preserve">
+    <value>gesamte Seite</value>
+  </data>
+  <data name="XINFO_Style_DocViewer_008" xml:space="preserve">
+    <value>Zwei Seiten</value>
+  </data>
+  <data name="XINFO_UC03_051" xml:space="preserve">
+    <value>Behandlungsprotokoll darstellen</value>
+  </data>
+  <data name="XINFO_UC03_052" xml:space="preserve">
+    <value>Das von Ihnen gewählte Verzeichnis enthält nicht {0}.~Bitte wählen Sie ein gültiges Verzeichnis. Standardmäßig wird {1} verwendet.</value>
+  </data>
+  <data name="XINFO_UC03_053" xml:space="preserve">
+    <value>Datei nicht gefunden</value>
+  </data>
+  <data name="XINFO_UC99_001" xml:space="preserve">
+    <value>EXPORTIERE XPS DOKUMENTE</value>
+  </data>
+  <data name="XINFO_UC99_002" xml:space="preserve">
+    <value>Exportiere Plan {0} von {1}.~{2} Pläne pro Sek., Export wird ca. beendet um {3}.</value>
+  </data>
+  <data name="XINFO_UC99_003" xml:space="preserve">
+    <value>Aktivieren Sie hier, um den Export zu beenden.</value>
+  </data>
+  <data name="XINFO_UC03_200" xml:space="preserve">
+    <value>Information zum Hintergrund-Task</value>
+  </data>
+  <data name="XINFO_UC03_201" xml:space="preserve">
+    <value>Hintergrund-Task wurde aus unbekannten Gründen unterbrochen.</value>
+  </data>
+  <data name="XINFO_UC03_202" xml:space="preserve">
+    <value>Hintergrund-Task wurde aufgrund eines Fehlers beendet. Bitte wiederholen Sie den Export.</value>
+  </data>
+  <data name="XINFO_UC03_204" xml:space="preserve">
+    <value>Der Export der XPS Dokumente wurde erfolgreich beendet.</value>
+  </data>
+  <data name="XINFO_UC03_203" xml:space="preserve">
+    <value>Der Export der XPS Dokumente wurde vom Anwender beendet.</value>
+  </data>
+  <data name="XINFO_UC03_205" xml:space="preserve">
+    <value>Der Hintergrund-Task ist beendet, aber es kann sein, dass nicht alle Datensätze exportiert wurden.</value>
+  </data>
+  <data name="XINFO_UC03_301" xml:space="preserve">
+    <value>Seite</value>
+  </data>
+  <data name="XINFO_UC03_300" xml:space="preserve">
+    <value>IMPERIUM Behandlungsbericht</value>
+  </data>
+  <data name="XINFO_UC03_207" xml:space="preserve">
+    <value>Problem beim Erstellen/Speichern der XPS Dokumente</value>
+  </data>
+  <data name="XINFO_UC03_206" xml:space="preserve">
+    <value>Beim Erstellen/Speichern der XPS Dokumente kam es zu einem Fehler:~{0}</value>
+  </data>
+  <data name="XINFO_UC01_001" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="XINFO_UC01_002" xml:space="preserve">
+    <value>Fehler-Code</value>
+  </data>
+  <data name="XINFO_UC01_004" xml:space="preserve">
+    <value>Beschreibung</value>
+  </data>
+  <data name="XINFO_UC01_003" xml:space="preserve">
+    <value>Angezeigte Nachricht</value>
+  </data>
+  <data name="XINFO_UC03_054" xml:space="preserve">
+    <value>Der Export von Datensätzen als individuelle XPS Dokumente benötigt Zeit.~{0} Datensätze können in ca. {1} Sekunden exportiert werden.~Die wirkliche Dauer hängt von der System-Performance ab.~~Möchten Sie fortfahren?</value>
+  </data>
+  <data name="XINFO_UC03_015" xml:space="preserve">
+    <value>" "</value>
+  </data>
+  <data name="XINFO_UC03_056" xml:space="preserve">
+    <value>Die Lizenzdatei zum Krankenhaus-Code {0} konnte nicht gefunden werden.~Bitte erhalten Sie eine gültige Lizenz und kopieren Sie die Datei unverändert nach {1}.</value>
+  </data>
+  <data name="XINFO_UC03_057" xml:space="preserve">
+    <value>Information zur Lizenz</value>
+  </data>
+  <data name="XINFO_UC03_058" xml:space="preserve">
+    <value>Es wurde mehr als eine Lizenz-Datei für diese Option gefunden.~Bitte erhalten Sie eine gültige Lizenz für den Krankenhaus-Code {0} und kopieren Sie die Datei unverändert nach {1}.~Löschen Sie auch alle Sicherungskopien oder ungültigen Lizenzdateien</value>
+  </data>
+  <data name="XINFO_UC03_017" xml:space="preserve">
+    <value>beginnt mit</value>
+  </data>
+  <data name="XINFO_UC03_018" xml:space="preserve">
+    <value>exakte Übereinstimmung</value>
+  </data>
+  <data name="XINFO_UC03_020" xml:space="preserve">
+    <value>ID</value>
+  </data>
+  <data name="XINFO_UC03_021" xml:space="preserve">
+    <value>Datum</value>
+  </data>
+  <data name="XINFO_UC03_019" xml:space="preserve">
+    <value>gruppiere nach</value>
+  </data>
+  <data name="XINFO_UC03_059" xml:space="preserve">
+    <value>Die Lizenz ist NICHT GÜLTIG!~~Fehlercode: {0}~~Aktiv? {1}~Kann ablaufen? {2}~Erstell-Datum: {3}~Serien-Nummer: {4}~Ablaufdatum: {5}~Dateiname: {6}~Lizenzkey: {7}~Lizenz-Produkt: {8}</value>
+  </data>
+  <data name="XINFO_UC03_022" xml:space="preserve">
+    <value>Zusammenfassung</value>
+  </data>
+  <data name="XINFO_UC03_010" xml:space="preserve">
+    <value>Geben Sie Ihren Filter ein</value>
+  </data>
+  <data name="XINFO_UC03_060" xml:space="preserve">
+    <value>Die Lizenz selbst ist zwar gültig, aber sie wurde für eine andere Seriennummer (Krankenhauscode) erstellt.~Ihre Seriennummer (Krankenhauscode) ist {0}.</value>
+  </data>
+  <data name="XINFO_UC03_061" xml:space="preserve">
+    <value>Die Lizenz selbst ist zwar gültig, aber sie wurde für ein anderes Produkt erstellt.</value>
+  </data>
+  <data name="XINFO_UC03_062" xml:space="preserve">
+    <value>Die Lizenz selbst ist zwar gültig, aber sie wurde mit dem Status "inaktiv" erstellt.</value>
+  </data>
+  <data name="XINFO_UC03_063" xml:space="preserve">
+    <value>Export Information</value>
+  </data>
+  <data name="XINFO_UC03_106_TRT" xml:space="preserve">
+    <value>Behandlungsfeld 2</value>
+  </data>
+  <data name="XINFO_UC03_104_TRT" xml:space="preserve">
+    <value>Behandlungsfeld 1</value>
+  </data>
+  <data name="XINFO_UC03_100" xml:space="preserve">
+    <value>Datenbank Index</value>
+  </data>
+  <data name="XINFO_UC03_023" xml:space="preserve">
+    <value>Bitte zuerst lesen</value>
+  </data>
+  <data name="XINFO_Main_000" xml:space="preserve">
+    <value>XINFO - Xstrahl Hilfreiche Informationen und nützliche Werkzeuge</value>
+  </data>
+  <data name="XINFO_UC03_064" xml:space="preserve">
+    <value>Fehler bei der Lizenz-Validierung: {0}</value>
+  </data>
+  <data name="XINFO_Main_005" xml:space="preserve">
+    <value>XLoop läuft und kann daher nicht ein zweites Mal gestartet werden. Sie sollten das Icon in der Taskleiste (meist unten am Bildschirm) sehen.</value>
+  </data>
+  <data name="XINFO_Main_006" xml:space="preserve">
+    <value>XLoop läuft bereits</value>
+  </data>
+  <data name="XINFO_UC03_025" xml:space="preserve">
+    <value>Export Information</value>
+  </data>
+  <data name="XINFO_UC03_024" xml:space="preserve">
+    <value>Die Datensätze, die der aktuellen Filterung entsprechen, wurden exportiert.</value>
+  </data>
+</root>

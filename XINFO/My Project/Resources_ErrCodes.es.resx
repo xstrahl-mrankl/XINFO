@@ -1,0 +1,1740 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ErrorCode_00001" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00002" xml:space="preserve">
+    <value>Division by Zero (división por cero)</value>
+  </data>
+  <data name="ErrorCode_00003" xml:space="preserve">
+    <value>Divide Overflow (dividir exceso)</value>
+  </data>
+  <data name="ErrorCode_00004" xml:space="preserve">
+    <value>kV too High (tensión demasiado alta)</value>
+  </data>
+  <data name="ErrorCode_00005" xml:space="preserve">
+    <value>mA too High (intensidad de la corriente eléctrica demasiado alta)</value>
+  </data>
+  <data name="ErrorCode_00006" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00007" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00008" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00009" xml:space="preserve">
+    <value>Focal Spot Error (error de mancha focal)</value>
+  </data>
+  <data name="ErrorCode_00010" xml:space="preserve">
+    <value>Bipolar Status Error (error de estado bipolar)</value>
+  </data>
+  <data name="ErrorCode_00011" xml:space="preserve">
+    <value>Generator Over kV (generador por encima de kV)</value>
+  </data>
+  <data name="ErrorCode_00012" xml:space="preserve">
+    <value>Generator Over mA (generador por encima de mA)</value>
+  </data>
+  <data name="ErrorCode_00013" xml:space="preserve">
+    <value>Converter Current (corriente del convertidor)</value>
+  </data>
+  <data name="ErrorCode_00014" xml:space="preserve">
+    <value>Converter Voltage (tensión del convertidor)</value>
+  </data>
+  <data name="ErrorCode_00015" xml:space="preserve">
+    <value>No Cooler Flow (enfriador sin flujo)</value>
+  </data>
+  <data name="ErrorCode_00016" xml:space="preserve">
+    <value>Check Cooling System (compruebe el sistema de refrigeración)</value>
+  </data>
+  <data name="ErrorCode_00017" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00018" xml:space="preserve">
+    <value>kV too Low (tensión demasiado baja)</value>
+  </data>
+  <data name="ErrorCode_00019" xml:space="preserve">
+    <value>mA too Low (intensidad demasiado baja)</value>
+  </data>
+  <data name="ErrorCode_00020" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00021" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00022" xml:space="preserve">
+    <value>X-Ray Decay too Slow (decaimiento de los rayos X demasiado lento)</value>
+  </data>
+  <data name="ErrorCode_00023" xml:space="preserve">
+    <value>Contactor Dropout (fallo del contactor)</value>
+  </data>
+  <data name="ErrorCode_00024" xml:space="preserve">
+    <value>Residual kV too High (tensión residual demasiado elevada)</value>
+  </data>
+  <data name="ErrorCode_00025" xml:space="preserve">
+    <value>Residual mA too High (intensidad residual demasiado elevada)</value>
+  </data>
+  <data name="ErrorCode_00026" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00027" xml:space="preserve">
+    <value>Communication Delay (demora en la comunicación)</value>
+  </data>
+  <data name="ErrorCode_00028" xml:space="preserve">
+    <value>All Filters in Box (todos los filtros en la caja)</value>
+  </data>
+  <data name="ErrorCode_00029" xml:space="preserve">
+    <value>Two Filters Removed (dos filtros eliminados)</value>
+  </data>
+  <data name="ErrorCode_00030" xml:space="preserve">
+    <value>Please Fit Filter (monte el filtro)</value>
+  </data>
+  <data name="ErrorCode_00031" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00032" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00033" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00034" xml:space="preserve">
+    <value>Bipolar kV Matching Failure (error de correspondencia tensión bipolar)</value>
+  </data>
+  <data name="ErrorCode_00035" xml:space="preserve">
+    <value>Bipolar mA Matching Failure (error de correspondencia intensidad bipolar)</value>
+  </data>
+  <data name="ErrorCode_00036" xml:space="preserve">
+    <value>Feedback Open Circuit (retroalimentación circuito abierto)</value>
+  </data>
+  <data name="ErrorCode_00037" xml:space="preserve">
+    <value>Heatseat Sink Temperature (temperatura del disipador térmico)</value>
+  </data>
+  <data name="ErrorCode_00038" xml:space="preserve">
+    <value>High Calibration Error (error de calibración elevada)</value>
+  </data>
+  <data name="ErrorCode_00039" xml:space="preserve">
+    <value>Low Calibration Error (error de calibración baja)</value>
+  </data>
+  <data name="ErrorCode_00040" xml:space="preserve">
+    <value>Anode Over mA (intensidad ánodo excesiva)</value>
+  </data>
+  <data name="ErrorCode_00041" xml:space="preserve">
+    <value>Anode Under mA (intensidad ánodo insuficiente)</value>
+  </data>
+  <data name="ErrorCode_00042" xml:space="preserve">
+    <value>Less than 5 kV reached (generador no alcanza 5 kV)</value>
+  </data>
+  <data name="ErrorCode_00043" xml:space="preserve">
+    <value>Interlock to Generator Lost (pérdida entrada de cierre de seguridad al generador)</value>
+  </data>
+  <data name="ErrorCode_00044" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00045" xml:space="preserve">
+    <value>Prohibited Exposure (exposición no permitida)</value>
+  </data>
+  <data name="ErrorCode_00046" xml:space="preserve">
+    <value>Uninitialized Filter (filtro no inicializado)</value>
+  </data>
+  <data name="ErrorCode_00047" xml:space="preserve">
+    <value>Bad Applicator Data (datos del aplicador erróneos)</value>
+  </data>
+  <data name="ErrorCode_00048" xml:space="preserve">
+    <value>Bad Dose Calibration (calibración de la dosis errónea)</value>
+  </data>
+  <data name="ErrorCode_00049" xml:space="preserve">
+    <value>Exposure Not Entered (exposición no introducida)</value>
+  </data>
+  <data name="ErrorCode_00050" xml:space="preserve">
+    <value>No Filter Selected (ningún filtro seleccionado)</value>
+  </data>
+  <data name="ErrorCode_00051" xml:space="preserve">
+    <value>No Applicator Chosen (ningún aplicador seleccionado)</value>
+  </data>
+  <data name="ErrorCode_00052" xml:space="preserve">
+    <value>Bad Temperature (temperatura errónea)</value>
+  </data>
+  <data name="ErrorCode_00053" xml:space="preserve">
+    <value>Bad Pressure (presión errónea)</value>
+  </data>
+  <data name="ErrorCode_00054" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00055" xml:space="preserve">
+    <value>X-Ray OFF Signal Open to Power Up (señal rayos X desactivados en circuito abierto durante el arranque)</value>
+  </data>
+  <data name="ErrorCode_00056" xml:space="preserve">
+    <value>Shutdown by Safety1 (parada por seguridad 1)</value>
+  </data>
+  <data name="ErrorCode_00057" xml:space="preserve">
+    <value>tdown by Safety2 (parada por seguridad 2)</value>
+  </data>
+  <data name="ErrorCode_00058" xml:space="preserve">
+    <value>Shutdown by Cooler Flow (parada por flujo del enfriador)</value>
+  </data>
+  <data name="ErrorCode_00059" xml:space="preserve">
+    <value>Shutdown by Cooler Temp (parada por temp. del enfriador)</value>
+  </data>
+  <data name="ErrorCode_00060" xml:space="preserve">
+    <value>Contactor Closed at Power Up(contactor cerrado en arranque)</value>
+  </data>
+  <data name="ErrorCode_00061" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00062" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00063" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00064" xml:space="preserve">
+    <value>System has RESET (el sistema se ha REINICIADO)</value>
+  </data>
+  <data name="ErrorCode_00065" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00066" xml:space="preserve">
+    <value>Key Turned During Exposure (llave girada durante exposición)</value>
+  </data>
+  <data name="ErrorCode_00067" xml:space="preserve">
+    <value>High kV Demand in XOff (demanda tensión elevada con rayos X desactivados)</value>
+  </data>
+  <data name="ErrorCode_00068" xml:space="preserve">
+    <value>High mA Demand in XOff (demanda intensidad elevada con rayos X desactivados)</value>
+  </data>
+  <data name="ErrorCode_00069" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00070" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00071" xml:space="preserve">
+    <value>Droop Cal. too High (caída cal. demasiado alta)</value>
+  </data>
+  <data name="ErrorCode_00072" xml:space="preserve">
+    <value>DAC Offset too High (tensión de equilibrado DAC demasiado alta)</value>
+  </data>
+  <data name="ErrorCode_00073" xml:space="preserve">
+    <value>DAC Range Problem (problema intervalo DAC)</value>
+  </data>
+  <data name="ErrorCode_00074" xml:space="preserve">
+    <value>ADC Zero Offset too High (tensión de equilibrado ADC demasiado alta)</value>
+  </data>
+  <data name="ErrorCode_00075" xml:space="preserve">
+    <value>ADC Range Problem (problema intervalo ADC)</value>
+  </data>
+  <data name="ErrorCode_00076" xml:space="preserve">
+    <value>ADC Calibration Lost (pérdida calibración ADC)</value>
+  </data>
+  <data name="ErrorCode_00077" xml:space="preserve">
+    <value>Bad Generator Table in PROM (datos de tipo del generador erróneos)</value>
+  </data>
+  <data name="ErrorCode_00078" xml:space="preserve">
+    <value>kV Breakdown Lockout (parada por anomalía de tensión)</value>
+  </data>
+  <data name="ErrorCode_00079" xml:space="preserve">
+    <value>X-Ray Off I / O Problem (problema rayos X desactivados I / O)</value>
+  </data>
+  <data name="ErrorCode_00080" xml:space="preserve">
+    <value>Anode Decay too Slow (decaimiento del ánodo demasiado lento)</value>
+  </data>
+  <data name="ErrorCode_00081" xml:space="preserve">
+    <value>Interlock Dropout (fallo cierre de seguridad)</value>
+  </data>
+  <data name="ErrorCode_00082" xml:space="preserve">
+    <value>Interrupted by HS Temp (interrupción por temperatura del disipador térmico)</value>
+  </data>
+  <data name="ErrorCode_00083" xml:space="preserve">
+    <value>Not Used (no utilizado)</value>
+  </data>
+  <data name="ErrorCode_00084" xml:space="preserve">
+    <value>Dual Door Interlock Failure (error cierre de seguridad dual)</value>
+  </data>
+  <data name="ErrorCode_00085" xml:space="preserve">
+    <value>Overriding Mandatory WU (sustitución WU obligatoria)</value>
+  </data>
+  <data name="ErrorCode_00086" xml:space="preserve">
+    <value>Exposure Param Error (error parám. exposición)</value>
+  </data>
+  <data name="ErrorCode_00087" xml:space="preserve">
+    <value>Anode Residual kV (tensión residual ánodo)</value>
+  </data>
+  <data name="ErrorCode_00088" xml:space="preserve">
+    <value>Anode Residual mA (intensidad residual ánodo)</value>
+  </data>
+  <data name="ErrorCode_00089" xml:space="preserve">
+    <value>No mA at Switch On (intensidad cero al encender)</value>
+  </data>
+  <data name="ErrorCode_00090" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00091" xml:space="preserve">
+    <value>Shutdown by Residual kV (parada por tensión residual)</value>
+  </data>
+  <data name="ErrorCode_00092" xml:space="preserve">
+    <value>Shutdown by Residual mA (parada por intensidad residual)</value>
+  </data>
+  <data name="ErrorCode_00093" xml:space="preserve">
+    <value>Timer Interrupt Late (interrup. temporizador tarde)</value>
+  </data>
+  <data name="ErrorCode_00094" xml:space="preserve">
+    <value>Generator Not Ready (generador no listo)</value>
+  </data>
+  <data name="ErrorCode_00095" xml:space="preserve">
+    <value>High Energy Discharge (energía descarga alta)</value>
+  </data>
+  <data name="ErrorCode_00096" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00097" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00098" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00099" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00100" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00101" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00102" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00103" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00104" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00105" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00106" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00107" xml:space="preserve">
+    <value>Generator Interlock Problem (problema cierre de seguridad generador)</value>
+  </data>
+  <data name="ErrorCode_00108" xml:space="preserve">
+    <value>App Factor Required (factor aplic. necesario)</value>
+  </data>
+  <data name="ErrorCode_00109" xml:space="preserve">
+    <value>Dose Requested too High (dosis requerida demasiado alta)</value>
+  </data>
+  <data name="ErrorCode_00110" xml:space="preserve">
+    <value>LCD Failure (error LCD)</value>
+  </data>
+  <data name="ErrorCode_00111" xml:space="preserve">
+    <value>Low Dose Rate Error (error tasa de dosis baja)</value>
+  </data>
+  <data name="ErrorCode_00112" xml:space="preserve">
+    <value>Emergency Off (apagado de emergencia)</value>
+  </data>
+  <data name="ErrorCode_00113" xml:space="preserve">
+    <value>Power On Light Failed (error piloto encendido)</value>
+  </data>
+  <data name="ErrorCode_00114" xml:space="preserve">
+    <value>X-Ray On Light Failed (error piloto rayos X activados)</value>
+  </data>
+  <data name="ErrorCode_00115" xml:space="preserve">
+    <value>Program Not Specified (programa no especificado)</value>
+  </data>
+  <data name="ErrorCode_00116" xml:space="preserve">
+    <value>Exposure Stopped by Key (exposición parada con llave)</value>
+  </data>
+  <data name="ErrorCode_00117" xml:space="preserve">
+    <value>Power Lost (interrupción suministro)</value>
+  </data>
+  <data name="ErrorCode_00118" xml:space="preserve">
+    <value>mA Value Not Available (valor intensidad no disponible)</value>
+  </data>
+  <data name="ErrorCode_00119" xml:space="preserve">
+    <value>kV Value Not Available (valor tensión no disponible)</value>
+  </data>
+  <data name="ErrorCode_00120" xml:space="preserve">
+    <value>Stopped by Backup Timer (detenido por temporizador de seguridad)</value>
+  </data>
+  <data name="ErrorCode_00121" xml:space="preserve">
+    <value>High Dose Rate Error (error tasa de dosis alta)</value>
+  </data>
+  <data name="ErrorCode_00122" xml:space="preserve">
+    <value>Applicator Encoding Error (error codificación aplicador)</value>
+  </data>
+  <data name="ErrorCode_00123" xml:space="preserve">
+    <value>Filter Encoding Error (error codificación filtro)</value>
+  </data>
+  <data name="ErrorCode_00124" xml:space="preserve">
+    <value>Generator Not Stopping (el generador no se apaga)</value>
+  </data>
+  <data name="ErrorCode_00125" xml:space="preserve">
+    <value>Generator Not Starting (el generador no se enciende)</value>
+  </data>
+  <data name="ErrorCode_00126" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00127" xml:space="preserve">
+    <value>Generator Not Setup (generador no ajustado)</value>
+  </data>
+  <data name="ErrorCode_00128" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00129" xml:space="preserve">
+    <value>Maintenance Due (requiere mantenimiento)</value>
+  </data>
+  <data name="ErrorCode_00130" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00131" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00132" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00133" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00134" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00135" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00136" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00137" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00138" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00139" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00140" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00141" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00142" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00143" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00144" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00145" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00146" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00147" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00148" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00149" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00150" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00151" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00152" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00153" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00154" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00155" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00156" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00157" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00158" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00159" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00160" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00161" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00162" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00163" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00164" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00165" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00166" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00167" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00168" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00169" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00170" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00171" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00172" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00173" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00174" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00175" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00176" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00177" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00178" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00179" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00180" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00181" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00182" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00183" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00184" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00185" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00186" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00187" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00188" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00189" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00190" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00191" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00192" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00193" xml:space="preserve">
+    <value>Generator Interlock Open (cierre de seguridad del generador abierto)</value>
+  </data>
+  <data name="ErrorCode_00194" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00195" xml:space="preserve">
+    <value>PC Data Interlock (cierre de seguridad datos PC)</value>
+  </data>
+  <data name="ErrorCode_00196" xml:space="preserve">
+    <value>Door Open (puerta abierta)</value>
+  </data>
+  <data name="ErrorCode_00197" xml:space="preserve">
+    <value>Room Interlock Open (cierre de seguridad de la sala abierto)</value>
+  </data>
+  <data name="ErrorCode_00198" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00199" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00200" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00201" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00202" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00203" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00204" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00205" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00206" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00207" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00208" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00209" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00210" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00211" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00212" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00213" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00214" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00215" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00216" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00217" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00218" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00219" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00220" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00221" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00222" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00223" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00224" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00225" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00226" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00227" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00228" xml:space="preserve">
+    <value>Watchdog Failure (error temporizador de vigilancia)</value>
+  </data>
+  <data name="ErrorCode_00229" xml:space="preserve">
+    <value>Background Lockup (cierre segundo plano).</value>
+  </data>
+  <data name="ErrorCode_00230" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00231" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00232" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00233" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00234" xml:space="preserve">
+    <value>Other Trap (otro fallo)</value>
+  </data>
+  <data name="ErrorCode_00235" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00236" xml:space="preserve">
+    <value>Bad Code Executed (código erróneo ejecutado)</value>
+  </data>
+  <data name="ErrorCode_00237" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00238" xml:space="preserve">
+    <value>No Real Time Clock (sin reloj en tiempo real)</value>
+  </data>
+  <data name="ErrorCode_00239" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00240" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00241" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00242" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00243" xml:space="preserve">
+    <value>Processor Clock Fault (fallo reloj procesador)</value>
+  </data>
+  <data name="ErrorCode_00244" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00245" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00246" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00247" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00248" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00249" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00250" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00251" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00252" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00253" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00254" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00255" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00256" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00257" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00258" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00259" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00260" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00261" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00262" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00263" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00264" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00265" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00266" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00267" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00268" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00269" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorCode_00270" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00001" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00002" xml:space="preserve">
+    <value>Aparece cuando el resultado de un cálculo interno es una división por cero. Exige apagar el equipo y volver a encenderlo.</value>
+  </data>
+  <data name="ErrorDesc_00003" xml:space="preserve">
+    <value>Aparece cuando el resultado de un cálculo interno es una división de cero. Exige apagar la alimentación y volver a encenderla.</value>
+  </data>
+  <data name="ErrorDesc_00004" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando el valor de tensión (kV) del generador sobrepasa el valor deseado. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00005" xml:space="preserve">
+    <value>Generator error (error del generador) Se muestra cuando el valor de corriente (mA) del generador sobrepasa el valor deseado. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00006" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00007" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00008" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00009" xml:space="preserve">
+    <value>Error del generador. Aparece después del encendido, si cambia la lectura del ajuste del filamento doble de la mancha focal.</value>
+  </data>
+  <data name="ErrorDesc_00010" xml:space="preserve">
+    <value>Error del generador. Aparece después del encendido si cambia la lectura de un tanque de ánodo.</value>
+  </data>
+  <data name="ErrorDesc_00011" xml:space="preserve">
+    <value>Error del generador. Aparece si la tensión (kV) del generador sobrepasa un valor establecido en la combinación de datos del tubo de rayos X y el generador. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00012" xml:space="preserve">
+    <value>Error del generador. Aparece si la intensidad (mA) del generador sobrepasa un valor establecido en la combinación de datos del tubo de rayos X y el generador. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00013" xml:space="preserve">
+    <value>Error del generador. Se muestra si se sobrepasa un límite interno de intensidad en los circuitos electrónicos excitadores del generador. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00014" xml:space="preserve">
+    <value>Error del generador. Se muestra si se sobrepasa un límite interno de tensión en los circuitos electrónicos excitadores del generador. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00015" xml:space="preserve">
+    <value>Aparece cuando el caudal de refrigerante es inferior al ajuste interno. No se trata de un error de cierre, por lo que se repone automáticamente. Este error desconecta el contactor de seguridad.</value>
+  </data>
+  <data name="ErrorDesc_00016" xml:space="preserve">
+    <value>Aparece cuando la temperatura del refrigerante sobrepasa el límite interno del enfriador. No se trata de un error de cierre, por lo que se repone automáticamente. Este error desconecta el contactor de seguridad.</value>
+  </data>
+  <data name="ErrorDesc_00017" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00018" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando la tensión (kV) del generador no alcanza el valor deseado dentro de un periodo de tiempo determinado. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00019" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando la intensidad (mA) del generador no alcanza el valor deseado dentro de un periodo de tiempo determinado. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00020" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00021" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00022" xml:space="preserve">
+    <value>Error del generador. Se muestra si el decaimiento de tensión (kV) al final de la exposición tarda demasiado. El estado del sistema seguirá siendo X-Ray ON hasta que se alcance el umbral de kV.</value>
+  </data>
+  <data name="ErrorDesc_00023" xml:space="preserve">
+    <value>Aparece cuando el usuario ha pulsado el botón X-Ray ON (rayos X activados) demasiado rápidamente. Espere a que el botón X-Ray ON (rayos X activados) se ilumine en verde y a que la pantalla del PC muestre el mensaje Ready for an exposure (listo para una exposición) antes de pulsar el botón X-Ray ON (rayos X activados).</value>
+  </data>
+  <data name="ErrorDesc_00024" xml:space="preserve">
+    <value>Error del generador. Aparece si la tensión (kV) del generador sobrepasa un cierto valor con el estado X-Ray OFF (rayos X desactivados).</value>
+  </data>
+  <data name="ErrorDesc_00025" xml:space="preserve">
+    <value>Error del generador. Aparece si la intensidad (mA) del generador sobrepasa un cierto valor con el estado X-Ray OFF (rayos X desactivados).</value>
+  </data>
+  <data name="ErrorDesc_00026" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00027" xml:space="preserve">
+    <value>Aparece cuando se produce un error de comunicaciones desde el generador. Con esto se inhibirá o finalizará el estado X-Rays ON (rayos X activados).</value>
+  </data>
+  <data name="ErrorDesc_00028" xml:space="preserve">
+    <value>Se muestra cuando todos los filtros están en la caja mural cuando se selecciona un filtro (solo en determinados sistemas). No se trata de un error de cierre, por lo que se repone automáticamente.</value>
+  </data>
+  <data name="ErrorDesc_00029" xml:space="preserve">
+    <value>Se muestra si falta más de un filtro de la caja mural cuando se selecciona un filtro (solo en determinados sistemas). No se trata de un error de cierre, por lo que se repone automáticamente.</value>
+  </data>
+  <data name="ErrorDesc_00030" xml:space="preserve">
+    <value>Se muestra en caso de que no haya ningún filtro montado en el conjunto de funda cuando se selecciona un filtro. No se trata de un error de cierre, por lo que se repone automáticamente.</value>
+  </data>
+  <data name="ErrorDesc_00031" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00032" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00033" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00034" xml:space="preserve">
+    <value>Error del generador. Aparece en los sistemas bipolares cuando las medidas de tensión (kV) en el ánodo y el cátodo difieren en una cantidad definida. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00035" xml:space="preserve">
+    <value>Error del generador. Aparece en los sistemas bipolares cuando las medidas de intensidad (mA) en el ánodo y el cátodo difieren en una cantidad definida. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00036" xml:space="preserve">
+    <value>Error del generador. Se muestra mientras la conexión con la placa de circuito impreso (PCB) de control desde la PCB de realimentación del filamento está en circuito abierto (modelos CP).</value>
+  </data>
+  <data name="ErrorDesc_00037" xml:space="preserve">
+    <value>Error del generador. Aparece cuando el termostato del disipador térmico indica una temperatura alta.</value>
+  </data>
+  <data name="ErrorDesc_00038" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando el valor de la tensión de calibración introducido en un proceso que se inicia es excesivamente elevado.</value>
+  </data>
+  <data name="ErrorDesc_00039" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando el valor de la tensión de calibración introducido en un proceso que se inicia es excesivamente bajo.</value>
+  </data>
+  <data name="ErrorDesc_00040" xml:space="preserve">
+    <value>Error del generador. Aparece en los sistemas bipolares en los cuales la intensidad (mA) del tanque de ánodo sobrepasa el valor deseado. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00041" xml:space="preserve">
+    <value>Error del generador. Se muestra en los sistemas bipolares cuando la intensidad (mA) del tanque de ánodo no alcanza el valor deseado dentro de un periodo de tiempo determinado. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00042" xml:space="preserve">
+    <value>Error del generador. Aparece cuando el generador no alcanza los 5 kV en un periodo de tiempo definido después de recibir un comando de activación de los rayos X. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00043" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando la exposición finaliza debido a la pérdida de la señal de entrada de cierre de seguridad emitida al generador. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00044" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00045" xml:space="preserve">
+    <value>Aparece cuando el tiempo introducido para un tratamiento de duración sobrepasa el límite de tiempo definido. Este error permanece hasta que se introduce una duración compatible (puede producirse en un tratamiento dosimétrico).</value>
+  </data>
+  <data name="ErrorDesc_00046" xml:space="preserve">
+    <value>Se muestra cuando se selecciona un filtro sin inicializar o se detecta el valor cero para cualquiera de los siguientes parámetros: kV, mA, CHR, tipo de CHR, dimensión o codificación.</value>
+  </data>
+  <data name="ErrorDesc_00047" xml:space="preserve">
+    <value>Aparece cuando se selecciona un aplicador no inicializado o cuando se da una forma no válida o valores de cero en cualquiera de los parámetros siguientes: ancho, eje transversal de un aplicador rectangular, largo o codificación.</value>
+  </data>
+  <data name="ErrorDesc_00048" xml:space="preserve">
+    <value>Aparece cuando está seleccionado un filtro para una exposición de dosis con un aplicador de referencia no válido o con valores cero de recuentos/segundo o recuentos/MU.</value>
+  </data>
+  <data name="ErrorDesc_00049" xml:space="preserve">
+    <value>Aparece cuando se pulsa el botón X-Ray y el estado interno NEEDS indica que la exposición no se ha definido. Este error continúa hasta que se define otro tratamiento.</value>
+  </data>
+  <data name="ErrorDesc_00050" xml:space="preserve">
+    <value>Aparece cuando se pulsa el botón X-Ray y el estado interno NEEDS indica que el filtro no se ha definido. Este error continúa hasta que se define otro tratamiento.</value>
+  </data>
+  <data name="ErrorDesc_00051" xml:space="preserve">
+    <value>Aparece cuando se pulsa el botón X-Ray y el estado interno NEEDS indica que el aplicador no se ha definido. Este error continúa hasta que se define otro tratamiento.</value>
+  </data>
+  <data name="ErrorDesc_00052" xml:space="preserve">
+    <value>Se muestra cuando la lectura de temperatura (en grados centígrados) del transductor es inferior a un valor mínimo (10) o superior a un valor máximo (35). Solo para sistemas de criterios dosimétricos. Este error continuará mientras la temperatura no sea válida.</value>
+  </data>
+  <data name="ErrorDesc_00053" xml:space="preserve">
+    <value>Se muestra cuando la lectura de presión (en milibares) del transductor es inferior a un valor mínimo (700) o mayor que un valor máximo (1200). Solo para sistemas de criterios dosimétricos. Este error continuará mientras la presión no sea válida.</value>
+  </data>
+  <data name="ErrorDesc_00054" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00055" xml:space="preserve">
+    <value>Aparece cuando el botón X-Ray OFF (rayos X desactivados) está en circuito abierto durante el arranque.</value>
+  </data>
+  <data name="ErrorDesc_00056" xml:space="preserve">
+    <value>Se muestra cuando el haz de rayos X se interrumpe por la apertura del contacto de la puerta. Se trata de un error de cierre, por lo que se requiere reiniciar una nueva señal de activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00057" xml:space="preserve">
+    <value>Se muestra cuando el haz de rayos X se interrumpe por la apertura del contacto de la segunda puerta/ cierre de seguridad de la sala. Se trata de un error de cierre, por lo que se requiere reiniciar una nueva señal de activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00058" xml:space="preserve">
+    <value>Se muestra cuando el haz de rayos X se interrumpe por la apertura del contacto de flujo del enfriador. Se trata de un error de cierre, por lo que se requiere reiniciar una nueva señal de activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00059" xml:space="preserve">
+    <value>Se muestra cuando el haz de rayos X se interrumpe por la apertura del contacto de temperatura del enfriador. Se trata de un error de cierre, por lo que se requiere reiniciar una nueva señal de activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00060" xml:space="preserve">
+    <value>Aparece durante el arranque si el contactor de seguridad está acoplado pero no activado.</value>
+  </data>
+  <data name="ErrorDesc_00061" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00062" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00063" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00064" xml:space="preserve">
+    <value>Error del generador. Aparece cuando se reinicia el procesador del generador.</value>
+  </data>
+  <data name="ErrorDesc_00065" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00066" xml:space="preserve">
+    <value>Aparece cuando el haz de rayos X se interrumpe al mover la llave de la consola de control desde HT (posición 3), la posición que activa los rayos X. No se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00067" xml:space="preserve">
+    <value>Error del generador.</value>
+  </data>
+  <data name="ErrorDesc_00068" xml:space="preserve">
+    <value>Error del generador.</value>
+  </data>
+  <data name="ErrorDesc_00069" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00070" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00071" xml:space="preserve">
+    <value>Error del generador.</value>
+  </data>
+  <data name="ErrorDesc_00072" xml:space="preserve">
+    <value>Error del generador. Aparece cuando la tensión de equilibrado del convertidor digital-analógico (DAC) es excesivamente alta. Esto inhibirá cualquier exposición.</value>
+  </data>
+  <data name="ErrorDesc_00073" xml:space="preserve">
+    <value>Error del generador. Aparece cuando el intervalo de datos del convertidor digital-analógico (DAC) es incorrecto. Esto inhibirá cualquier exposición.</value>
+  </data>
+  <data name="ErrorDesc_00074" xml:space="preserve">
+    <value>Error del generador. Aparece cuando la tensión de equilibrado del convertidor analógico-digital (ADC) es excesivamente alta. Esto inhibirá cualquier exposición.</value>
+  </data>
+  <data name="ErrorDesc_00075" xml:space="preserve">
+    <value>Error del generador. Aparece cuando el rango de datos del convertidor analógico-digital (ADC) es incorrecto. Esto inhibirá cualquier exposición.</value>
+  </data>
+  <data name="ErrorDesc_00076" xml:space="preserve">
+    <value>Error del generador. Aparece cuando se pierde la calibración del convertidor analógico-digital (ADC). Esto inhibirá cualquier exposición.</value>
+  </data>
+  <data name="ErrorDesc_00077" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando los datos de tipo del generador están dañados. Esto inhibirá cualquier exposición.</value>
+  </data>
+  <data name="ErrorDesc_00078" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando se interrumpen los rayos X por tres episodios de valores de tensión (kV) sucesivamente más bajos. Esto inhibirá cualquier exposición.</value>
+  </data>
+  <data name="ErrorDesc_00079" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando el generador recibe un comando de activación de rayos X, pero la línea de cierre de seguridad de desactivación de los rayos X no está activada (con alimentación eléctrica).</value>
+  </data>
+  <data name="ErrorDesc_00080" xml:space="preserve">
+    <value>Error del generador. Se muestra en los sistemas bipolares si el decaimiento de tensión (kV) del ánodo al final de la exposición tarda demasiado. El estado del sistema seguirá siendo X-Ray ON (rayos X activados) hasta que se alcance el umbral de kV.</value>
+  </data>
+  <data name="ErrorDesc_00081" xml:space="preserve">
+    <value>Error del generador. Aparece cuando una exposición finaliza por la pérdida de la señal de cierre de seguridad. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00082" xml:space="preserve">
+    <value>Error del generador. Se muestra cuando una exposición finaliza por el termostato del disipador térmico. Se trata de un error de cierre.</value>
+  </data>
+  <data name="ErrorDesc_00083" xml:space="preserve">
+    <value>Error del generador. Se muestra si las tablas unipolares o bipolares son incompatibles.</value>
+  </data>
+  <data name="ErrorDesc_00084" xml:space="preserve">
+    <value>Se muestra siempre que dos sensores de puerta no funcionan conjuntamente, cuando están configurados para hacerlo. Ello impide la activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00085" xml:space="preserve">
+    <value>Error del generador. No se utiliza en este sistema.</value>
+  </data>
+  <data name="ErrorDesc_00086" xml:space="preserve">
+    <value>Error del generador.</value>
+  </data>
+  <data name="ErrorDesc_00087" xml:space="preserve">
+    <value>Error del generador. Aparece en los sistemas bipolares si la tensión (kV) del tanque del generador del ánodo sobrepasa un cierto valor con el estado X-Ray OFF (rayos X desactivados).</value>
+  </data>
+  <data name="ErrorDesc_00088" xml:space="preserve">
+    <value>Error del generador. Aparece en los sistemas bipolares si la intensidad (mA) del tanque del generador del ánodo sobrepasa un cierto valor con el estado X-Ray OFF (rayos X desactivados).</value>
+  </data>
+  <data name="ErrorDesc_00089" xml:space="preserve">
+    <value>Error del generador. Se muestra si los valores de intensidad (mA) medidos permanecen en el valor cero después de un tiempo determinado.</value>
+  </data>
+  <data name="ErrorDesc_00090" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00091" xml:space="preserve">
+    <value>Error del generador. Se trata de un error de cierre. Aparece si un error de kV residuales ha interrumpido los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00092" xml:space="preserve">
+    <value>Error del generador. Se trata de un error de cierre. Aparece si un error de mA residuales ha interrumpido los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00093" xml:space="preserve">
+    <value>Error del generador.</value>
+  </data>
+  <data name="ErrorDesc_00094" xml:space="preserve">
+    <value>Error del generador.</value>
+  </data>
+  <data name="ErrorDesc_00095" xml:space="preserve">
+    <value>Error del generador.</value>
+  </data>
+  <data name="ErrorDesc_00096" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00097" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00098" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00099" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00100" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00101" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00102" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00103" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00104" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00105" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00106" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00107" xml:space="preserve">
+    <value>Se muestra si el control del relé de cierre de seguridad no provoca la respuesta correcta que se espera del generador.</value>
+  </data>
+  <data name="ErrorDesc_00108" xml:space="preserve">
+    <value>Aparece cuando está seleccionado el aplicador para una exposición dosimétrica y el factor del aplicador seleccionado está fuera de rango. (Debe ser mayor o igual que 0,8 y menor o igual que 1,2.)</value>
+  </data>
+  <data name="ErrorDesc_00109" xml:space="preserve">
+    <value>Aparece cuando la dosis especificada para un tratamiento dosimétrico sobrepasa el límite de dosis definido. Este error permanece hasta que se introduce una dosis compatible.</value>
+  </data>
+  <data name="ErrorDesc_00110" xml:space="preserve">
+    <value>Se muestra si el sistema TP2 no consigue leer los datos de la pantalla LCD. Este error permanece hasta que sea corregido.</value>
+  </data>
+  <data name="ErrorDesc_00111" xml:space="preserve">
+    <value>Se muestra cuando la tasa de dosis supervisada de un tratamiento dosimétrico es inferior a la tasa calibrada en más del 3 %. Se emplea la relación entre los mA reales y los deseados para modificar el cálculo en la rampa de mA de conmutación. Este error interrumpirá los rayos X. Exige girar la llave de la consola de control en el sentido contrario de las agujas del reloj hasta la posición Standby (espera) (posición 2) y, a continuación, otra vez a HT (posición 3) para activar los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00112" xml:space="preserve">
+    <value>Se muestra cuando el haz de rayos X se interrumpe por la pulsación del botón Emergency OFF (apagado de emergencia). Aunque los rayos X no se vuelven a emitir de manera automática después de restablecer manualmente la parada de emergencia, puede que sea posible después de pulsar el botón X-Ray ON (rayos X activados).</value>
+  </data>
+  <data name="ErrorDesc_00113" xml:space="preserve">
+    <value>Se muestra cuando el piloto Power ON (encendido) externo no recibe corriente. Ello impide la activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00114" xml:space="preserve">
+    <value>Se muestra cuando el piloto X-Ray ON externo no recibe corriente. Ello impide la activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00115" xml:space="preserve">
+    <value>Aparece cuando se pulsa el botón X-Ray y el estado interno NEEDS indica que el programa no se ha definido. Este error continúa hasta que se define otro tratamiento.</value>
+  </data>
+  <data name="ErrorDesc_00116" xml:space="preserve">
+    <value>Aparece cuando el haz de rayos X se interrumpe al mover la llave de la consola de control desde la posición HT (posición 3), que es la posición de activación. Se trata de un error de cierre, por lo que se requiere reiniciar una nueva señal de activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00117" xml:space="preserve">
+    <value>Se muestra cuando el programa que supervisa el sistema TP2 a través de las comunicaciones en serie no recibe datos. El programa indica POWER LOST (interrupción suministro) y espera a que el TP2 se recupere y, si es posible, reanude su funcionamiento. La reanudación de la emisión de rayos X solo es posible bajo el control del operario.</value>
+  </data>
+  <data name="ErrorDesc_00118" xml:space="preserve">
+    <value>Se muestra si el límite de intensidad (mA) del generador (para el valor deseado de kV) es inferior al valor de intensidad de tratamiento requerido. Ello impide la activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00119" xml:space="preserve">
+    <value>Aparece si el límite de tensión (kV) del generador es inferior al valor de tensión de tratamiento requerido. Ello impide la activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00120" xml:space="preserve">
+    <value>Se muestra cuando el temporizador de seguridad interrumpe la exposición. El cálculo del límite varía entre los tratamientos por duración y dosimétricos. No se permitirán nuevas exposiciones. Se permite la activación de los rayos X, pero la interrupción se repite en cuanto se pone en marcha el temporizador.</value>
+  </data>
+  <data name="ErrorDesc_00121" xml:space="preserve">
+    <value>Se muestra cuando la tasa de dosis supervisada de un tratamiento dosimétrico es superior a la tasa calibrada en más del 3 %. Este error interrumpirá los rayos X. Exige girar la llave de la consola de control en el sentido contrario de las agujas del reloj hasta la posición Standby (espera) (posición 2) y, a continuación, otra vez a HT (posición 3) para activar los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00122" xml:space="preserve">
+    <value>Aparece cuando los bits del aplicador no coinciden con los del aplicador especificado.</value>
+  </data>
+  <data name="ErrorDesc_00123" xml:space="preserve">
+    <value>Aparece cuando los bits del filtro no coinciden con los del filtro especificado.</value>
+  </data>
+  <data name="ErrorDesc_00124" xml:space="preserve">
+    <value>Se muestra si el generador no se apaga en un plazo de dos segundos.</value>
+  </data>
+  <data name="ErrorDesc_00125" xml:space="preserve">
+    <value>Se muestra si el generador no se enciende en un plazo de dos segundos.</value>
+  </data>
+  <data name="ErrorDesc_00126" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00127" xml:space="preserve">
+    <value>Aparece si no se puede ajustar el generador al valor requerido de kV o mA. Ello impide la activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00128" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00129" xml:space="preserve">
+    <value>Error del generador. Aparece si la fecha actual es posterior a la elegida para el mantenimiento rutinario. No inhibe la activación de los rayos X.</value>
+  </data>
+  <data name="ErrorDesc_00130" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00131" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00132" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00133" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00134" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00135" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00136" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00137" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00138" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00139" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00140" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00141" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00142" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00143" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00144" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00145" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00146" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00147" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00148" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00149" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00150" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00151" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00152" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00153" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00154" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00155" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00156" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00157" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00158" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00159" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00160" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00161" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00162" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00163" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00164" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00165" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00166" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00167" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00168" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00169" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00170" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00171" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00172" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00173" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00174" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00175" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00176" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00177" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00178" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00179" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00180" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00181" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00182" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00183" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00184" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00185" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00186" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00187" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00188" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00189" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00190" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00191" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00192" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00193" xml:space="preserve">
+    <value>Se muestra si el cierre de seguridad del generador está abierto; se suprime a menos que el relé del cierre de seguridad sea activado.</value>
+  </data>
+  <data name="ErrorDesc_00194" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00195" xml:space="preserve">
+    <value>Aparece cuando el sistema TP2 no recibe un cierre de seguridad desde el software del PC en un tiempo inferior a un segundo con la llave de la consola de control en la posición HT (posición 3).</value>
+  </data>
+  <data name="ErrorDesc_00196" xml:space="preserve">
+    <value>Wird angezeigt, wenn das erste Sicherheitssignal nicht von der TP2 erfasst wird. Bei diesem Fehler wird das Sicherheitsschütz abgetrennt.</value>
+  </data>
+  <data name="ErrorDesc_00197" xml:space="preserve">
+    <value>Se muestra si no se detecta la segunda señal de seguridad en el sistema TP2. Este error desconecta el contactor de seguridad.</value>
+  </data>
+  <data name="ErrorDesc_00198" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00199" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00200" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00201" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00202" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00203" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00204" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00205" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00206" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00207" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00208" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00209" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00210" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00211" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00212" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00213" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00214" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00215" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00216" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00217" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00218" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00219" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00220" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00221" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00222" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00223" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00224" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00225" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00226" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00227" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00228" xml:space="preserve">
+    <value>Aparece cuando el software del sistema TP2 no vuelve a disparar el temporizador de vigilancia a tiempo. Este error no puede reiniciarse. Se trata de un error irrecuperable.</value>
+  </data>
+  <data name="ErrorDesc_00229" xml:space="preserve">
+    <value>Se muestra cuando el software de segundo plano del sistema TP2 no se ejecuta a tiempo. Este error no puede reiniciarse. Se trata de un error irrecuperable.</value>
+  </data>
+  <data name="ErrorDesc_00230" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00231" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00232" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00233" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00234" xml:space="preserve">
+    <value>Aparece cuando se produce un fallo inesperado. Este error no puede reiniciarse. Se trata de un error irrecuperable.</value>
+  </data>
+  <data name="ErrorDesc_00235" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00236" xml:space="preserve">
+    <value>Se muestra cuando se detecta una instrucción incorrecta. Este error no puede reiniciarse. Se trata de un error irrecuperable.</value>
+  </data>
+  <data name="ErrorDesc_00237" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00238" xml:space="preserve">
+    <value>NO SE UTILIZA.</value>
+  </data>
+  <data name="ErrorDesc_00239" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00240" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00241" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00242" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00243" xml:space="preserve">
+    <value>Aparece si se produce un fallo del reloj del procesador interno. Este error no puede reiniciarse. Se trata de un error irrecuperable.</value>
+  </data>
+  <data name="ErrorDesc_00244" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00245" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00246" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00247" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00248" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00249" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00250" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00251" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00252" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00253" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00254" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00255" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00256" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00257" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00258" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00259" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00260" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00261" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00262" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00263" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00264" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00265" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00266" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00267" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00268" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00269" xml:space="preserve">
+    <value>-</value>
+  </data>
+  <data name="ErrorDesc_00270" xml:space="preserve">
+    <value>-</value>
+  </data>
+</root>

@@ -1,0 +1,95 @@
+﻿<Window x:Class="XIWW002_ShowDBInfo"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:XINFO"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        Title="Xstrahl 'classic' Database Browser"
+        Width="700"
+        Height="500"
+        WindowStyle="ToolWindow"
+        mc:Ignorable="d">
+    <Window.Background>
+        <SolidColorBrush Color="{DynamicResource Xstrahl_Yellow020}" />
+    </Window.Background>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0"
+                   Margin="10,10,10,0"
+                   TextWrapping="Wrap">
+            <Run FontSize="16"
+                 FontStyle="Italic"
+                 FontWeight="Bold"
+                 Foreground="{StaticResource Xstrahl_SCB_Purple100}">
+                Xstrahl Imperium
+            </Run>
+            <LineBreak />
+            <Run FontSize="14">In case of</Run>
+            <Run FontSize="14" FontWeight="Bold">Imperium</Run>
+            <Run FontSize="14">copy the database file D3KTMNT.DBF and IMPERIUM.INI</Run>
+            <LineBreak />
+            <Run FontSize="12">By default, both files can be found at C:\Imperium</Run>
+            <LineBreak />
+            <LineBreak />
+            <Run FontSize="16"
+                 FontStyle="Italic"
+                 FontWeight="Bold"
+                 Foreground="{StaticResource Xstrahl_SCB_Purple100}">
+                Xstrahl Elevar
+            </Run>
+            <LineBreak />
+            <Run FontSize="14">In case of</Run>
+            <Run FontSize="14" FontWeight="Bold">Elevar</Run>
+            <Run FontSize="14">copy the database file VERDATA.DBF and ELEVAR.INI</Run>
+            <LineBreak />
+            <Run FontSize="12">By default, both files can be found at C:\Imperium</Run>
+            <LineBreak />
+            <LineBreak />
+            <Run FontSize="16"
+                 FontStyle="Italic"
+                 FontWeight="Bold"
+                 Foreground="{StaticResource Xstrahl_SCB_Purple100}">
+                Gulmay D3000 Series Data Interface
+            </Run>
+            <LineBreak />
+            <Run FontSize="14">In case of</Run>
+            <Run FontSize="14" FontWeight="Bold">PDS D3K</Run>
+            <Run FontSize="14">copy the database file TREATMNT.DBF and D3K.INI</Run>
+            <LineBreak />
+            <Run FontSize="12">By default, TREATMENT.DBF can be found at C:\D3K</Run>
+            <LineBreak />
+            <Run FontSize="12">D3K.INI can be found at C:\User\{Username}\AppData\Local\VirtualStore\Windows</Run>
+            <LineBreak />
+            <LineBreak />
+            <Run FontSize="16"
+                 FontStyle="Italic"
+                 FontWeight="Bold"
+                 Foreground="{StaticResource Xstrahl_SCB_Purple100}">
+                Gulmay Medical D3000 Verification System
+            </Run>
+            <LineBreak />
+            <Run FontSize="14">In case of</Run>
+            <Run FontSize="14" FontWeight="Bold">VerD3K</Run>
+            <Run FontSize="14">copy the database file VERDATA.DBF and VERD3K.INI</Run>
+            <LineBreak />
+            <Run FontSize="12">By default, TREATMENT.DBF can be found at C:\VERD3K</Run>
+            <LineBreak />
+            <Run FontSize="12">VERD3K.INI can be found at C:\User\{Username}\AppData\Local\VirtualStore\Windows</Run>
+            <LineBreak />
+            <LineBreak />
+            <Run FontSize="14" FontWeight="Bold">For each product copy both files mentioned above to C:\XInfo_Data\ClassicDB</Run>
+            <LineBreak />
+            <Run FontSize="14">Both files and a licence (based on each INI file) are required to read in the database information and to print &amp; export the records.</Run>
+            <Run FontSize="14">Synchronize the content in the INI files if multiple databases are used.</Run>
+        </TextBlock>
+        <Button Grid.Row="1"
+                Margin="10,0,0,10"
+                VerticalAlignment="Bottom"
+                Click="CloseWindow"
+                Content="Close"
+                Style="{StaticResource STLButton02}" />
+    </Grid>
+</Window>
