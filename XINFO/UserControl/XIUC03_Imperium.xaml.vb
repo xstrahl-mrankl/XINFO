@@ -899,7 +899,6 @@ Public Class XIUC03_Imperium
 
         If sender Is TXTBLCK03_Imperium03 Then
             Dim DOB As New DateTime(CInt(MyImpSelectedTreatment.PatientDoB.Substring(0, 4)), CInt(MyImpSelectedTreatment.PatientDoB.Substring(4, 2)), CInt(MyImpSelectedTreatment.PatientDoB.Substring(6, 2)))
-            'ChosenImperiumValue = XstrahlCrypto.XstrahlFunctions.GetDateAsYYYYMMDD(MyImpSelectedTreatment.PatientDoB) 
             ChosenImperiumValue = XstrahlCrypto.XstrahlFunctions.GetDateAsYYYYMMDD(DOB)
         ElseIf sender Is TXTBLCK03_Imperium10 Then
             ChosenImperiumValue = XstrahlCrypto.XstrahlFunctions.GetDateAsYYYYMMDD(MyImpSelectedTreatment.TreatmentDateAndTime)   'Format(Year(MyImpSelectedTreatment.TreatmentDateAndTime), "0000") & Format((MyImpSelectedTreatment.TreatmentDateAndTime), "00") & Format(DateAndTime.Day(MyImpSelectedTreatment.TreatmentDateAndTime), "00")
@@ -1092,7 +1091,7 @@ Public Class XIUC03_Imperium
         'Dim FinishDateAsSec As Double = (FinishDate - Today).TotalSeconds
 
         MyUC.LBL99_Info.Text = String.Format(XIRes.GetString("XINFO_UC99_002").Replace("~", vbCrLf),
-                                                MyImpSearchTreatments.Count - e.ProgressPercentage,
+                                                MyImpSearchTreatments.Count - e.ProgressPercentage - 1,
                                                 MyImpSearchTreatments.Count,
                                                 String.Format("{0:F2}", CurrentExpRate),
                                                 XstrahlCrypto.XstrahlFunctions.GetTimeAsHHMMSSwithColon(FinishDate))
@@ -1177,15 +1176,9 @@ Public Class XIUC03_Imperium
                 End Try
             End If
 
-            'Now concatenate everything and check whether file doesn't exist yet
-            XPSPathAndFileName = DirInfoGroupFolder.FullName & "\" & XPSFileName & XstrahlCrypto.XstrahlFunctions.GetDateTimeAsYYYYMMDD_HHMMSS(Now) & ".xps"
+            'Now concatenate everything 
+            XPSPathAndFileName = DirInfoGroupFolder.FullName & "\" & XPSFileName & Format(DBItemIndex, "0000000") & ".xps"
             MyFileInfo = New FileInfo(XPSPathAndFileName)
-            Do While MyFileInfo.Exists = True
-                'In principle, this can never happen because the filename contains the treatment TIME. And there can't be TWO treatments at exactly the same moment.
-                System.Threading.Thread.Sleep(50)
-                XPSPathAndFileName = DirInfoGroupFolder.FullName & "\" & XPSFileName & XstrahlCrypto.XstrahlFunctions.GetDateTimeAsYYYYMMDD_HHMMSS(Now) & ".xps"
-                MyFileInfo = New FileInfo(XPSPathAndFileName)
-            Loop
 
             MyDocument = New FixedDocument
             MyDocument = XInfoImperiumDB.CreateFixedDocumentWithPages(MyImpSearchTreatments, DBItemIndex, 1, MyFileInfo.Name, SelectedPaperSize)
@@ -1200,7 +1193,7 @@ Public Class XIUC03_Imperium
                 Exit For
             End Try
 
-            If DBItemIndex / 25 = DBItemIndex \ 25 Then
+            If DBItemIndex / 50 = DBItemIndex \ 50 Then
                 System.Windows.Forms.Application.DoEvents()
             End If
         Next

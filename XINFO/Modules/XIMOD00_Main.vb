@@ -13,6 +13,8 @@ Module XIMOD00_Main
     Public XS100ErrorsView As ListCollectionView = CType(CollectionViewSource.GetDefaultView(XS100Errors), ListCollectionView)
     Public mSortierung42 As New XICL02_Sort
 
+    Public MyXstrahlLogoURI As Uri = New Uri(".\Resources\Images\xstrahl.png", UriKind.Relative)
+
     Public Property AllXstrahlErrors As ObservableCollection(Of XICL01_ErrorCodeTable)
         Get
             Return XS100Errors

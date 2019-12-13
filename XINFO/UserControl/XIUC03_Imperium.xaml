@@ -10,8 +10,7 @@
     Name="XIUC03"
     d:DesignHeight="600"
     d:DesignWidth="950"
-    mc:Ignorable="d"
-    >
+    mc:Ignorable="d">
 
     <UserControl.Resources>
         <Converters:DateConverter01 x:Key="SetTreatDateTime" />
@@ -23,10 +22,7 @@
         <Grid.Background>
             <SolidColorBrush Color="{DynamicResource Xstrahl_Purple020}" />
         </Grid.Background>
-        <Grid
-            Name="GRD03_DBBrowser"
-            Style="{StaticResource GRD_UCMain}"
-            >
+        <Grid Name="GRD03_DBBrowser" Style="{StaticResource GRD_UCMain}">
             <Grid.RowDefinitions>
                 <RowDefinition MinHeight="35" />
                 <RowDefinition MinHeight="35" />
@@ -61,8 +57,7 @@
                 VerticalAlignment="Center"
                 Content="{x:Static p:Resources.XINFO_UC03_001}"
                 FontSize="18"
-                FontWeight="Bold"
-                />
+                FontWeight="Bold" />
             <Button
                 x:Name="BTN03_ReadMeFirst"
                 Grid.Row="0"
@@ -71,14 +66,12 @@
                 VerticalAlignment="Center"
                 Click="ReadMeFirst"
                 Content="{x:Static p:Resources.XINFO_UC03_023}"
-                Style="{StaticResource STLButton02}"
-                />
+                Style="{StaticResource STLButton02}" />
             <StackPanel
                 Grid.Row="0"
                 Grid.Column="3"
                 Grid.ColumnSpan="3"
-                Orientation="Horizontal"
-                >
+                Orientation="Horizontal">
 
                 <Label
                     Name="LBL03_NrOfAllItems"
@@ -86,24 +79,21 @@
                     Content="{Binding Path=ImperiumTotalCounter, Mode=OneWay, FallbackValue='N/A'}"
                     ContentStringFormat="{}{0}"
                     FontSize="18"
-                    FontWeight="Bold"
-                    />
+                    FontWeight="Bold" />
                 <Label
                     Name="LBL03_NrOfAllItemsText"
                     Margin="5,0,0,0"
                     VerticalAlignment="Center"
                     Content="{x:Static p:Resources.XINFO_UC03_002}"
                     FontSize="18"
-                    FontWeight="Bold"
-                    />
+                    FontWeight="Bold" />
             </StackPanel>
 
             <Border
                 Grid.Row="1"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
 
             <RadioButton
                 Name="RDBTN03_Imperium02"
@@ -114,8 +104,7 @@
                 Foreground="{StaticResource Xstrahl_SCB_Purple100}"
                 GroupName="ImperiumItem"
                 IsChecked="True"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <Expander
                 x:Name="EXPNDR03_Document"
                 Grid.Row="1"
@@ -127,8 +116,7 @@
                 Panel.ZIndex="1000"
                 ExpandDirection="Up"
                 FlowDirection="RightToLeft"
-                Header="{x:Static p:Resources.XINFO_UC03_051}"
-                >
+                Header="{x:Static p:Resources.XINFO_UC03_051}">
                 <Expander.HeaderTemplate>
                     <DataTemplate>
                         <TextBlock
@@ -137,14 +125,10 @@
                             FlowDirection="LeftToRight"
                             FontSize="14"
                             Text="{Binding RelativeSource={RelativeSource AncestorType=Expander}, Path=Header}"
-                            TextAlignment="Right"
-                            />
+                            TextAlignment="Right" />
                     </DataTemplate>
                 </Expander.HeaderTemplate>
-                <Grid
-                    Background="White"
-                    FlowDirection="LeftToRight"
-                    >
+                <Grid Background="White" FlowDirection="LeftToRight">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="27*" />
                         <RowDefinition Height="323*" />
@@ -162,8 +146,7 @@
                         BorderBrush="{StaticResource Xstrahl_SCB_Purple100}"
                         BorderThickness="3"
                         ShowPageBorders="True"
-                        TabIndex="2"
-                        >
+                        TabIndex="2">
                         <DocumentViewer.Resources>
                             <Style TargetType="ContentControl">
                                 <Setter Property="Visibility" Value="Hidden" />
@@ -180,23 +163,20 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding PatientID, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding PatientID, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
 
             <Border
                 Grid.Row="1"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium08"
                 Grid.Row="1"
                 Grid.Column="3"
                 Content="{x:Static p:Resources.XINFO_UC03_108}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium08"
                 Grid.Row="1"
@@ -204,14 +184,12 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding FilterCode, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding FilterCode, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="2"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
 
             <RadioButton
                 Name="RDBTN03_Imperium01"
@@ -219,12 +197,8 @@
                 Grid.Column="0"
                 VerticalContentAlignment="Center"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                >
-                <TextBlock
-                    Text="{x:Static p:Resources.XINFO_UC03_101}"
-                    TextWrapping="Wrap"
-                    />
+                Style="{StaticResource STLRadioButton01}">
+                <TextBlock Text="{x:Static p:Resources.XINFO_UC03_101}" TextWrapping="Wrap" />
             </RadioButton>
             <TextBlock
                 Name="TXTBLCK03_Imperium01"
@@ -233,22 +207,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding PatientFullName, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding PatientFullName, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="2"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium14"
                 Grid.Row="2"
                 Grid.Column="3"
                 Content="{x:Static p:Resources.XINFO_UC03_114}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium14"
                 Grid.Row="2"
@@ -256,8 +227,7 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding FilterHVL, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding FilterHVL, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
 
 
 
@@ -267,14 +237,12 @@
                 Grid.Column="0"
                 Content="{x:Static p:Resources.XINFO_UC03_103}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <Border
                 Grid.Row="3"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium03"
                 Grid.Row="3"
@@ -282,14 +250,12 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding PatientDoB, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A', Converter={StaticResource SetBirthDate}}"
-                />
+                Text="{Binding PatientDoB, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A', Converter={StaticResource SetBirthDate}}" />
             <Border
                 Grid.Row="3"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium10"
                 Grid.Row="3"
@@ -298,8 +264,7 @@
                 FontWeight="Bold"
                 Foreground="{StaticResource Xstrahl_SCB_Purple100}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium10"
                 Grid.Row="3"
@@ -307,22 +272,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding TreatmentDateAndTime, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A', Converter={StaticResource SetTreatDateTime}}"
-                />
+                Text="{Binding TreatmentDateAndTime, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A', Converter={StaticResource SetTreatDateTime}}" />
             <Border
                 Grid.Row="4"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium05"
                 Grid.Row="4"
                 Grid.Column="0"
                 Content="{x:Static p:Resources.XINFO_UC03_105}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium05"
                 Grid.Row="4"
@@ -330,14 +292,12 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding Clinician, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding Clinician, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="4"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
 
 
             <RadioButton
@@ -346,8 +306,7 @@
                 Grid.Column="3"
                 Content="{x:Static p:Resources.XINFO_UC03_109}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium09"
                 Grid.Row="4"
@@ -355,27 +314,21 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding ApplicatorCode, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding ApplicatorCode, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <RadioButton
                 Name="RDBTN03_Imperium04"
                 Grid.Row="5"
                 Grid.Column="0"
                 VerticalAlignment="Center"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                >
-                <TextBlock
-                    Text="{x:Static p:Resources.XINFO_UC03_104}"
-                    TextWrapping="Wrap"
-                    />
+                Style="{StaticResource STLRadioButton01}">
+                <TextBlock Text="{x:Static p:Resources.XINFO_UC03_104}" TextWrapping="Wrap" />
             </RadioButton>
             <Border
                 Grid.Row="5"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium04"
                 Grid.Row="5"
@@ -383,22 +336,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding PatientPicture, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding PatientPicture, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="5"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium15"
                 Grid.Row="5"
                 Grid.Column="3"
                 Content="{x:Static p:Resources.XINFO_UC03_115}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium15"
                 Grid.Row="5"
@@ -406,22 +356,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding ApplicatorData, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding ApplicatorData, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <RadioButton
                 Name="RDBTN03_Imperium06"
                 Grid.Row="6"
                 Grid.Column="0"
                 Content="{x:Static p:Resources.XINFO_UC03_106}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <Border
                 Grid.Row="6"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium06"
                 Grid.Row="6"
@@ -429,22 +376,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding TreatmentField, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding TreatmentField, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="6"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium12"
                 Grid.Row="6"
                 Grid.Column="3"
                 Content="{x:Static p:Resources.XINFO_UC03_112}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium12"
                 Grid.Row="6"
@@ -452,22 +396,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding FilterkV, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding FilterkV, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <RadioButton
                 Name="RDBTN03_Imperium07"
                 Grid.Row="7"
                 Grid.Column="0"
                 Content="{x:Static p:Resources.XINFO_UC03_107}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <Border
                 Grid.Row="7"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium07"
                 Grid.Row="7"
@@ -475,22 +416,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding TreatmentPosition, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding TreatmentPosition, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="7"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium13"
                 Grid.Row="7"
                 Grid.Column="3"
                 Content="{x:Static p:Resources.XINFO_UC03_113}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium13"
                 Grid.Row="7"
@@ -498,22 +436,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding FiltermA, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding FiltermA, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="8"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium16"
                 Grid.Row="8"
                 Grid.Column="0"
                 Content="{x:Static p:Resources.XINFO_UC03_116}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium16"
                 Grid.Row="8"
@@ -521,22 +456,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding DoseAdmin, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding DoseAdmin, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="8"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium17"
                 Grid.Row="8"
                 Grid.Column="3"
                 Content="{x:Static p:Resources.XINFO_UC03_117}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium17"
                 Grid.Row="8"
@@ -544,22 +476,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding TimeAdmin, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding TimeAdmin, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="9"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium19"
                 Grid.Row="9"
                 Grid.Column="0"
                 Content="{x:Static p:Resources.XINFO_UC03_119}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium19"
                 Grid.Row="9"
@@ -567,22 +496,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding DoseSet, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding DoseSet, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="9"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium20"
                 Grid.Row="9"
                 Grid.Column="3"
                 Content="{x:Static p:Resources.XINFO_UC03_120}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium20"
                 Grid.Row="9"
@@ -590,22 +516,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding TimeSet, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding TimeSet, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="10"
                 Grid.Column="0"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium18"
                 Grid.Row="10"
                 Grid.Column="0"
                 Content="{x:Static p:Resources.XINFO_UC03_118}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium18"
                 Grid.Row="10"
@@ -613,22 +536,19 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding TreatmentOperator, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding TreatmentOperator, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <Border
                 Grid.Row="10"
                 Grid.Column="3"
                 Grid.ColumnSpan="2"
-                Style="{StaticResource Border01}"
-                />
+                Style="{StaticResource Border01}" />
             <RadioButton
                 Name="RDBTN03_Imperium21"
                 Grid.Row="10"
                 Grid.Column="3"
                 Content="{x:Static p:Resources.XINFO_UC03_121}"
                 GroupName="ImperiumItem"
-                Style="{StaticResource STLRadioButton01}"
-                />
+                Style="{StaticResource STLRadioButton01}" />
             <TextBlock
                 Name="TXTBLCK03_Imperium21"
                 Grid.Row="10"
@@ -636,8 +556,7 @@
                 VerticalAlignment="Center"
                 FontSize="14"
                 MouseRightButtonDown="CopyContentToFilter"
-                Text="{Binding GeneratorError, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}"
-                />
+                Text="{Binding GeneratorError, UpdateSourceTrigger=PropertyChanged, Mode=OneWay, FallbackValue='N/A'}" />
             <StackPanel
                 Grid.Row="11"
                 Grid.RowSpan="2"
@@ -645,8 +564,7 @@
                 Grid.ColumnSpan="5"
                 HorizontalAlignment="Left"
                 VerticalAlignment="Center"
-                Orientation="Horizontal"
-                >
+                Orientation="Horizontal">
                 <StackPanel.Background>
                     <SolidColorBrush Color="{DynamicResource Xstrahl_Purple040}" />
                 </StackPanel.Background>
@@ -659,8 +577,7 @@
                     FontSize="12"
                     GroupName="RDBTN_Database"
                     Style="{StaticResource STLRadioButton01}"
-                    ToolTip="PDS D3K (TREATMNT.DBF &amp; D3K.INI)"
-                    />
+                    ToolTip="PDS D3K (TREATMNT.DBF &amp; D3K.INI)" />
                 <RadioButton
                     Name="RDBTN03_DbaseD3KTMNT"
                     Margin="10,0,0,0"
@@ -671,8 +588,7 @@
                     GroupName="RDBTN_Database"
                     IsChecked="True"
                     Style="{StaticResource STLRadioButton01}"
-                    ToolTip="Imperium (D3KTMNT.DBF &amp; Imperium.INI)"
-                    />
+                    ToolTip="Imperium (D3KTMNT.DBF &amp; Imperium.INI)" />
 
                 <RadioButton
                     Name="RDBTN03_DbaseVERDATA"
@@ -685,8 +601,7 @@
                     IsEnabled="False"
                     Style="{StaticResource STLRadioButton01}"
                     ToolTip="VER D3K (VERDATA.DBF &amp; VERD3K.INI)"
-                    Visibility="Collapsed"
-                    />
+                    Visibility="Collapsed" />
 
                 <RadioButton
                     Name="RDBTN03_DbaseElevar"
@@ -699,8 +614,7 @@
                     IsEnabled="False"
                     Style="{StaticResource STLRadioButton01}"
                     ToolTip="Elevar (VERDATA.DBF &amp; Elevar.INI)"
-                    Visibility="Collapsed"
-                    />
+                    Visibility="Collapsed" />
 
                 <Button
                     x:Name="BTN03_FindImperium"
@@ -708,14 +622,12 @@
                     Margin="10,3,3,3"
                     Click="SearchForImperium"
                     Content="{x:Static p:Resources.XINFO_UC03_011}"
-                    Style="{StaticResource STLButton02}"
-                    />
+                    Style="{StaticResource STLButton02}" />
             </StackPanel>
             <Grid
                 Grid.Row="13"
                 Grid.Column="0"
-                Grid.ColumnSpan="5"
-                >
+                Grid.ColumnSpan="5">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="35" />
                     <RowDefinition Height="35" />
@@ -726,8 +638,7 @@
                     Grid.Column="0"
                     Margin="0,5"
                     VerticalAlignment="Center"
-                    Orientation="Horizontal"
-                    >
+                    Orientation="Horizontal">
                     <TextBox
                         x:Name="TXTBX03_SearchValue"
                         Width="250"
@@ -740,8 +651,7 @@
                         MaxLength="60"
                         MaxLines="1"
                         Text="{x:Static p:Resources.XINFO_UC03_010}"
-                        ToolTip="{x:Static p:Resources.XINFO_UC03_009}"
-                        />
+                        ToolTip="{x:Static p:Resources.XINFO_UC03_009}" />
                     <Button
                         x:Name="BTN03_ApplyFilter"
                         Grid.Row="0"
@@ -750,15 +660,13 @@
                         VerticalAlignment="Top"
                         Click="SearchForSelectedProperty"
                         Content="{x:Static p:Resources.XINFO_UC03_003}"
-                        Style="{StaticResource STLButton02}"
-                        />
+                        Style="{StaticResource STLButton02}" />
                 </StackPanel>
                 <StackPanel
                     Grid.Row="1"
                     Grid.Column="0"
                     VerticalAlignment="Top"
-                    Orientation="Horizontal"
-                    >
+                    Orientation="Horizontal">
 
                     <RadioButton
                         Name="RDBTN03_MatchPositionAny"
@@ -766,16 +674,14 @@
                         Content="{x:Static p:Resources.XINFO_UC03_016}"
                         GroupName="RDBTN_MatchFilter"
                         IsChecked="True"
-                        Style="{StaticResource STLRadioButton01}"
-                        />
+                        Style="{StaticResource STLRadioButton01}" />
                     <RadioButton
                         Name="RDBTN03_MatchPositionStart"
                         Margin="10,0,0,0"
                         VerticalContentAlignment="Center"
                         Content="{x:Static p:Resources.XINFO_UC03_017}"
                         GroupName="RDBTN_MatchFilter"
-                        Style="{StaticResource STLRadioButton01}"
-                        />
+                        Style="{StaticResource STLRadioButton01}" />
                     <RadioButton
                         Name="RDBTN03_MatchPositionExact"
                         Margin="10,0,0,0"
@@ -784,24 +690,21 @@
                         FontWeight="Bold"
                         Foreground="{StaticResource Xstrahl_SCB_Purple100}"
                         GroupName="RDBTN_MatchFilter"
-                        Style="{StaticResource STLRadioButton01}"
-                        />
+                        Style="{StaticResource STLRadioButton01}" />
                 </StackPanel>
                 <StackPanel
                     Grid.Row="2"
                     Grid.Column="0"
                     HorizontalAlignment="Left"
                     VerticalAlignment="Bottom"
-                    Orientation="Horizontal"
-                    >
+                    Orientation="Horizontal">
 
                     <Button
                         Name="BTN03_ItemsFirst"
                         Click="GoToItem"
                         Content="{x:Static p:Resources.XINFO_UC03_004}"
                         IsEnabled="True"
-                        Style="{StaticResource STLButton01}"
-                        >
+                        Style="{StaticResource STLButton01}">
                         <Button.Background>
                             <SolidColorBrush Color="{StaticResource Xstrahl_Grey020}" />
                         </Button.Background>
@@ -815,8 +718,7 @@
                         Click="GoToItem"
                         Content="{x:Static p:Resources.XINFO_UC03_005}"
                         IsEnabled="True"
-                        Style="{StaticResource STLButton01}"
-                        >
+                        Style="{StaticResource STLButton01}">
                         <Button.Background>
                             <SolidColorBrush Color="{StaticResource Xstrahl_Grey020}" />
                         </Button.Background>
@@ -827,8 +729,7 @@
                     <StackPanel
                         Margin="5,0,5,0"
                         VerticalAlignment="Center"
-                        Orientation="Vertical"
-                        >
+                        Orientation="Vertical">
                         <TextBox
                             Name="TXTBX03_CurrentItem"
                             Width="100"
@@ -839,13 +740,11 @@
                             FontWeight="Bold"
                             IsEnabled="False"
                             IsReadOnly="True"
-                            Text="{Binding Path=CurrentItemCounter, Mode=Default, FallbackValue='N/A'}"
-                            />
+                            Text="{Binding Path=CurrentItemCounter, Mode=Default, FallbackValue='N/A'}" />
                         <Label
                             HorizontalContentAlignment="Center"
                             VerticalContentAlignment="Center"
-                            Content="{x:Static p:Resources.XINFO_UC03_008}"
-                            />
+                            Content="{x:Static p:Resources.XINFO_UC03_008}" />
                         <TextBox
                             Name="TXTBX03_AllItems"
                             Width="100"
@@ -855,16 +754,14 @@
                             FontWeight="Bold"
                             IsEnabled="False"
                             IsReadOnly="True"
-                            Text="{Binding Path=ImperiumSearchCounter, Mode=Default, FallbackValue='N/A', StringFormat={}{0}}"
-                            />
+                            Text="{Binding Path=ImperiumSearchCounter, Mode=Default, FallbackValue='N/A', StringFormat={}{0}}" />
                     </StackPanel>
                     <Button
                         Name="BTN03_ItemsNext"
                         Click="GoToItem"
                         Content="{x:Static p:Resources.XINFO_UC03_006}"
                         IsEnabled="True"
-                        Style="{StaticResource STLButton01}"
-                        >
+                        Style="{StaticResource STLButton01}">
                         <Button.Background>
                             <SolidColorBrush Color="{StaticResource Xstrahl_Grey020}" />
                         </Button.Background>
@@ -878,8 +775,7 @@
                         Click="GoToItem"
                         Content="{x:Static p:Resources.XINFO_UC03_007}"
                         IsEnabled="True"
-                        Style="{StaticResource STLButton01}"
-                        >
+                        Style="{StaticResource STLButton01}">
                         <Button.Background>
                             <SolidColorBrush Color="{StaticResource Xstrahl_Grey020}" />
                         </Button.Background>
@@ -893,8 +789,7 @@
                         Click="ExportAsXML"
                         Content="{x:Static p:Resources.XINFO_UC03_013}"
                         IsEnabled="True"
-                        Style="{StaticResource STLButton01}"
-                        >
+                        Style="{StaticResource STLButton01}">
                         <Button.Background>
                             <SolidColorBrush Color="{StaticResource Xstrahl_Grey020}" />
                         </Button.Background>
@@ -908,8 +803,7 @@
                         Click="ExportAsCSV"
                         Content="{x:Static p:Resources.XINFO_UC03_012}"
                         IsEnabled="True"
-                        Style="{StaticResource STLButton01}"
-                        >
+                        Style="{StaticResource STLButton01}">
                         <Button.Background>
                             <SolidColorBrush Color="{StaticResource Xstrahl_Grey020}" />
                         </Button.Background>
@@ -920,16 +814,14 @@
                     <StackPanel
                         Margin="5,0,0,0"
                         VerticalAlignment="Top"
-                        Orientation="Vertical"
-                        >
+                        Orientation="Vertical">
                         <RadioButton
                             Name="RDBTN03_CSVcomma"
                             Content=","
                             FontWeight="Bold"
                             GroupName="CSVseparator"
                             IsChecked="True"
-                            Style="{StaticResource STLRadioButton01}"
-                            />
+                            Style="{StaticResource STLRadioButton01}" />
 
                         <RadioButton
                             Name="RDBTN03_CSVsemicolon"
@@ -937,8 +829,7 @@
                             Content=";"
                             FontWeight="Bold"
                             GroupName="CSVseparator"
-                            Style="{StaticResource STLRadioButton01}"
-                            />
+                            Style="{StaticResource STLRadioButton01}" />
                         <CheckBox
                             Name="CHKBX03_InvertedCommas"
                             Grid.Row="1"
@@ -948,8 +839,7 @@
                             VerticalContentAlignment="Center"
                             Content="{x:Static p:Resources.XINFO_UC03_015}"
                             FontWeight="Bold"
-                            IsChecked="True"
-                            />
+                            IsChecked="True" />
                     </StackPanel>
                     <Button
                         Name="BTN03_ItemsExportMSXPS"
@@ -958,8 +848,7 @@
                         Content="{x:Static p:Resources.XINFO_UC03_014}"
                         Foreground="{StaticResource Xstrahl_SCB_Purple100}"
                         IsEnabled="True"
-                        Style="{StaticResource STLButton01}"
-                        >
+                        Style="{StaticResource STLButton01}">
                         <Button.Background>
                             <SolidColorBrush Color="{StaticResource Xstrahl_Grey020}" />
                         </Button.Background>
@@ -972,49 +861,42 @@
                         <StackPanel
                             Margin="5,0,0,0"
                             VerticalAlignment="Top"
-                            Orientation="Horizontal"
-                            >
+                            Orientation="Horizontal">
                             <RadioButton
                                 Name="RDBTN03_PapersizeA4"
                                 Content="A4"
                                 GroupName="Papersize"
                                 IsChecked="True"
-                                Style="{StaticResource STLRadioButton01}"
-                                />
+                                Style="{StaticResource STLRadioButton01}" />
 
                             <RadioButton
                                 Name="RDBTN03_PapersizeLetter"
                                 Margin="10,0,0,0"
                                 Content="Letter"
                                 GroupName="Papersize"
-                                Style="{StaticResource STLRadioButton01}"
-                                />
+                                Style="{StaticResource STLRadioButton01}" />
                         </StackPanel>
                         <Label
                             HorizontalContentAlignment="Left"
                             VerticalContentAlignment="Center"
-                            Content="{x:Static p:Resources.XINFO_UC03_019}"
-                            />
+                            Content="{x:Static p:Resources.XINFO_UC03_019}" />
                         <StackPanel
                             Margin="5,0,0,0"
                             VerticalAlignment="Top"
-                            Orientation="Horizontal"
-                            >
+                            Orientation="Horizontal">
                             <RadioButton
                                 Name="RDBTN03_GroupID"
                                 Content="{x:Static p:Resources.XINFO_UC03_020}"
                                 GroupName="GroupBy"
                                 IsChecked="True"
-                                Style="{StaticResource STLRadioButton01}"
-                                />
+                                Style="{StaticResource STLRadioButton01}" />
 
                             <RadioButton
                                 Name="RDBTN03_GroupDate"
                                 Margin="10,0,0,0"
                                 Content="{x:Static p:Resources.XINFO_UC03_021}"
                                 GroupName="GroupBy"
-                                Style="{StaticResource STLRadioButton01}"
-                                />
+                                Style="{StaticResource STLRadioButton01}" />
                         </StackPanel>
                         <CheckBox
                             Name="CHKBX03_ReportSummary"
@@ -1027,8 +909,7 @@
                             FontWeight="Bold"
                             Foreground="{StaticResource Xstrahl_SCB_Purple100}"
                             IsChecked="False"
-                            Visibility="Hidden"
-                            />
+                            Visibility="Hidden" />
                     </StackPanel>
 
                 </StackPanel>

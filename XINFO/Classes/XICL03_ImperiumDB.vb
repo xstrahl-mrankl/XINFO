@@ -15,6 +15,11 @@ Public Class XInfoImperiumDB
         RaiseEvent PropertyChanged(Me, New PropertyChangedEventArgs(propertyName))
     End Sub
 
+    Private Shared PaperWidth As Single = XICL04_ReadOnly.PSA4Width * 96
+    Private Shared PaperHeight As Single = XICL04_ReadOnly.PSA4Height * 96
+
+#Region "Properties"
+
     Private _DataBaseIndex As String
     Private _PatientFullName As String
     Private _PatientID As String
@@ -40,9 +45,6 @@ Public Class XInfoImperiumDB
     Private _HospitalName As String
     Private _DepartmentName As String
     Private _SystemName As String
-
-
-#Region "Properties"
 
     Public Property DataBaseIndex As String
         Get
@@ -376,21 +378,15 @@ Public Class XInfoImperiumDB
 
     Public Function CreateFilename(ReplaceBadChar As Boolean, ReplacementChar As Char, ItemSeparator As String) As String
 
-        Dim BadPosition As Int32
         If ItemSeparator.Trim = "" Then ItemSeparator = "---"
         CreateFilename = PatientID & ItemSeparator
-        CreateFilename &= XstrahlCrypto.XstrahlFunctions.GetDateAsYYYYMMDD(TreatmentDateAndTime) '  Format(Year(TreatmentDateAndTime), "0000") & Format(Month(TreatmentDateAndTime), "00") & Format(DateAndTime.Day(TreatmentDateAndTime), "00")
+        CreateFilename &= XstrahlCrypto.XstrahlFunctions.GetDateAsYYYYMMDD(TreatmentDateAndTime)
         CreateFilename &= ItemSeparator
-        CreateFilename &= XstrahlCrypto.XstrahlFunctions.GetTimeAsHHMMSS(TreatmentDateAndTime) '  Format(Hour(TreatmentDateAndTime), "00") & Format(Minute(TreatmentDateAndTime), "00") & Format(Second(TreatmentDateAndTime), "00")
+        CreateFilename &= XstrahlCrypto.XstrahlFunctions.GetTimeAsHHMMSS(TreatmentDateAndTime)
         CreateFilename &= ItemSeparator
 
         If ReplaceBadChar = True Then
-            For Each BadChar As Char In System.IO.Path.GetInvalidFileNameChars
-                BadPosition = InStr(CreateFilename, BadChar)
-                If BadPosition > 0 Then
-                    CreateFilename = CreateFilename.Replace(BadChar, "_")
-                End If
-            Next
+            CreateFilename = String.Join("_", CreateFilename.Split(Path.GetInvalidFileNameChars()))
         End If
 
         Return CreateFilename
@@ -399,17 +395,11 @@ Public Class XInfoImperiumDB
 
     Public Function CreateFolderNamePatID(ReplaceBadChar As Boolean, ReplacementChar As Char, ItemSeparator As String) As String
 
-        Dim BadPosition As Int32
         If ItemSeparator.Trim = "" Then ItemSeparator = "---"
         CreateFolderNamePatID = PatientID
 
         If ReplaceBadChar = True Then
-            For Each BadChar As Char In System.IO.Path.GetInvalidFileNameChars
-                BadPosition = InStr(CreateFolderNamePatID, BadChar)
-                If BadPosition > 0 Then
-                    CreateFolderNamePatID = CreateFolderNamePatID.Replace(BadChar, "_")
-                End If
-            Next
+            CreateFolderNamePatID = String.Join("_", CreateFolderNamePatID.Split(Path.GetInvalidFileNameChars()))
         End If
 
         Return CreateFolderNamePatID
@@ -418,17 +408,11 @@ Public Class XInfoImperiumDB
 
     Public Function CreateFolderNameTreatDate(ReplaceBadChar As Boolean, ReplacementChar As Char, ItemSeparator As String) As String
 
-        Dim BadPosition As Int32
         If ItemSeparator.Trim = "" Then ItemSeparator = "---"
         CreateFolderNameTreatDate = XstrahlCrypto.XstrahlFunctions.GetDateAsYYYYMMDD(TreatmentDateAndTime)
 
         If ReplaceBadChar = True Then
-            For Each BadChar As Char In System.IO.Path.GetInvalidFileNameChars
-                BadPosition = InStr(CreateFolderNameTreatDate, BadChar)
-                If BadPosition > 0 Then
-                    CreateFolderNameTreatDate = CreateFolderNameTreatDate.Replace(BadChar, "_")
-                End If
-            Next
+            CreateFolderNameTreatDate = String.Join("_", CreateFolderNameTreatDate.Split(Path.GetInvalidFileNameChars()))
         End If
 
         Return CreateFolderNameTreatDate
@@ -440,6 +424,15 @@ Public Class XInfoImperiumDB
 
     Public Shared Function CreateFixedDocumentWithPages(ByRef TreatmentObject As ObservableCollection(Of XInfoImperiumDB), DBItemIndex As Int32, PageNrTotal As Int32, XPSFileNameInFooter As String, SelectedPaperSize As XICL05_Enums.Papersize) As FixedDocument
         Dim PageNrCurrent As Int32 = 1
+
+        If SelectedPaperSize = XICL05_Enums.Papersize.A4 Then
+            PaperWidth = XICL04_ReadOnly.PSA4Width * 96
+            PaperHeight = XICL04_ReadOnly.PSA4Height * 96
+
+        ElseIf SelectedPaperSize = XICL05_Enums.Papersize.Letter = True Then
+            PaperWidth = XICL04_ReadOnly.PSLetterWidth * 96
+            PaperHeight = XICL04_ReadOnly.PSLetterHeight * 96
+        End If
 
         Dim MyFixedDocument As New FixedDocument
         MyFixedDocument = CreateFixedDocument(SelectedPaperSize)
@@ -486,18 +479,6 @@ Public Class XInfoImperiumDB
     Private Shared Function CreateFixedDocument(ByRef SelectedPaperSize As XICL05_Enums.Papersize) As FixedDocument
 
         Dim MyFixedDocument As New FixedDocument
-        Dim PaperWidth As Single = XICL04_ReadOnly.PSA4Width * 96
-        Dim PaperHeight As Single = XICL04_ReadOnly.PSA4Height * 96
-
-        If SelectedPaperSize = XICL05_Enums.Papersize.A4 Then
-            PaperWidth = XICL04_ReadOnly.PSA4Width * 96
-            PaperHeight = XICL04_ReadOnly.PSA4Height * 96
-
-        ElseIf SelectedPaperSize = XICL05_Enums.Papersize.Letter = True Then
-            PaperWidth = XICL04_ReadOnly.PSLetterWidth * 96
-            PaperHeight = XICL04_ReadOnly.PSLetterHeight * 96
-        End If
-
         MyFixedDocument.DocumentPaginator.PageSize = New Size(PaperWidth, PaperHeight)
         Return MyFixedDocument
 
@@ -506,15 +487,8 @@ Public Class XInfoImperiumDB
     Private Shared Function CreatePageContent(ByRef TreatmentObject As ObservableCollection(Of XInfoImperiumDB), ByRef DBItemIndex As Int32, ByRef XPSFileNameInFooter As String, ByRef PageNr As Int32, ByRef PageTotalNr As Int32, ByRef SelectedPaperSize As XICL05_Enums.Papersize) As FixedPage
 
         Dim MyPage As FixedPage = New FixedPage
-
-        If SelectedPaperSize = XICL05_Enums.Papersize.A4 Then
-            MyPage.Width = XICL04_ReadOnly.PSA4Width * 96
-            MyPage.Height = XICL04_ReadOnly.PSA4Height * 96
-        ElseIf SelectedPaperSize = XICL05_Enums.Papersize.Letter = True Then
-            MyPage.Width = XICL04_ReadOnly.PSLetterWidth * 96
-            MyPage.Height = XICL04_ReadOnly.PSLetterHeight * 96
-        End If
-
+        MyPage.Width = PaperWidth
+        MyPage.Height = PaperHeight
         MyPage.Background = Brushes.White
 
         Dim PaperMarginLeft As Double = XICL06_Functions.ConvmmToPixel(XICL04_ReadOnly.MarginLeftMax, 96)
@@ -599,7 +573,6 @@ Public Class XInfoImperiumDB
         End With
         CNVSHeaderTitle.Children.Add(TitleHeader)
 
-        Dim MyXstrahlLogoURI As Uri = New Uri(".\Resources\Images\xstrahl.png", UriKind.Relative)
         Dim XstrahlLogo As BitmapImage = New BitmapImage(MyXstrahlLogoURI)
 
         Dim MyImage As Image = New Image With {
