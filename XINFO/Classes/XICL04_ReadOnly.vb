@@ -1,51 +1,40 @@
-﻿Imports System.Text.RegularExpressions
+﻿Imports System.IO
+Imports System.Text.RegularExpressions
 
 Public Class XICL04_ReadOnly
     'ALL DIRECTORIES MUST END WITH A BACKSLASH!!!
     'Otherwise they are not recognized as directory when using DirectoryInfo method.
     '-------------------------------------------------------------------------------
 
+    ''' <summary>
+    ''' Environment.SpecialFolder.CommonDocuments
+    ''' </summary>
+    Public Shared ReadOnly CUsersPublicPublicDocuments As DirectoryInfo = New DirectoryInfo(Environment.GetFolderPath(Environment.SpecialFolder.CommonDocuments))
 
-    Public Shared ReadOnly Property XInfoDirMain As String
-        Get
-            Return "C:\XInfo_Data"
-        End Get
-    End Property
+    ''' <summary>
+    ''' CUsersPublicPublicDocuments.Parent.FullName
+    ''' </summary>
+    Public Shared ReadOnly CUsersPublic As String = CUsersPublicPublicDocuments.Parent.FullName
 
-    Public Shared ReadOnly Property XInfoDirSettings As String
-        Get
-            Return "C:\XInfo_Data\Settings\"
-        End Get
-    End Property
+    ''' <summary>
+    ''' Xstrahl\XPhys
+    ''' </summary>
+    Public Shared ReadOnly Folder_CUPXstrahlXInfo As String = Path.Combine(CUsersPublic, "Xstrahl\XInfo_Data\")
 
-    Public Shared ReadOnly Property XInfoDirTemp As String
-        Get
-            Return "C:\XInfo_Data\Temp\"
-        End Get
-    End Property
+    Public Shared ReadOnly XInfoDirSettings As String = Path.Combine(CUsersPublic, "Xstrahl\XInfo_Data\Settings\")
 
-    Public Shared ReadOnly Property XInfoDirExportCSV As String
-        Get
-            Return "C:\XInfo_Data\Export_CSV\"
-        End Get
-    End Property
-    Public Shared ReadOnly Property XInfoDirExportXML As String
-        Get
-            Return "C:\XInfo_Data\Export_XML\"
-        End Get
-    End Property
+    Public Shared ReadOnly XInfoDirTemp As String = Path.Combine(CUsersPublic, "Xstrahl\XInfo_Data\Temp\")
 
-    Public Shared ReadOnly Property XInfoDirExportXPS As String
-        Get
-            Return "C:\XInfo_Data\Export_XPS\"
-        End Get
-    End Property
+    Public Shared ReadOnly XInfoDirLicence As String = Path.Combine(CUsersPublic, "Xstrahl\XInfo_Data\Licence\")
 
-    Public Shared ReadOnly Property XInfoDirClassicDB As String
-        Get
-            Return "C:\XInfo_Data\ClassicDB\"
-        End Get
-    End Property
+    Public Shared ReadOnly XInfoDirExportCSV As String = Path.Combine(CUsersPublic, "Xstrahl\XInfo_Data\Export_CSV\")
+
+    Public Shared ReadOnly XInfoDirExportXML As String = Path.Combine(CUsersPublic, "Xstrahl\XInfo_Data\Export_XML\")
+
+    Public Shared ReadOnly XInfoDirExportXPS As String = Path.Combine(CUsersPublic, "Xstrahl\XInfo_Data\Export_XPS\")
+
+    Public Shared ReadOnly XInfoDirClassicDB As String = Path.Combine(CUsersPublic, "Xstrahl\XInfo_Data\ClassicDB\")
+
 
 #Region "Read Only values for printing"
 

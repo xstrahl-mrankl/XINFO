@@ -251,16 +251,16 @@ Public Class XIUC03_Imperium
         Dim XInfoLicenceFileNamePattern As String = "Xstrahl_" & ImpHospitalCode & "_XII_" & "?" & "????????_????????_??????.exml"
 
         Dim XInfoLicenceFiles() As FileInfo
-        Dim SettingsFolder As New FileInfo(XICL04_ReadOnly.XInfoDirSettings)
+        Dim LicenceFolder As New FileInfo(XICL04_ReadOnly.XInfoDirLicence)
 
-        XInfoLicenceFiles = SettingsFolder.Directory.GetFiles(XInfoLicenceFileNamePattern, SearchOption.TopDirectoryOnly)
+        XInfoLicenceFiles = LicenceFolder.Directory.GetFiles(XInfoLicenceFileNamePattern, SearchOption.TopDirectoryOnly)
 
         If XInfoLicenceFiles.Count = 0 Then
-            MessageBox.Show(String.Format(XIRes.GetString("XINFO_UC03_056").Replace("~", vbCrLf), ImpHospitalCode, XICL04_ReadOnly.XInfoDirSettings),
+            MessageBox.Show(String.Format(XIRes.GetString("XINFO_UC03_056").Replace("~", vbCrLf), ImpHospitalCode, XICL04_ReadOnly.XInfoDirLicence),
                             XIRes.GetString("XINFO_UC03_057"), MessageBoxButton.OK, MessageBoxImage.Information)
             Exit Sub
         ElseIf XInfoLicenceFiles.Count > 1 Then
-            MessageBox.Show(String.Format(XIRes.GetString("XINFO_UC03_058").Replace("~", vbCrLf), ImpHospitalCode, XICL04_ReadOnly.XInfoDirSettings),
+            MessageBox.Show(String.Format(XIRes.GetString("XINFO_UC03_058").Replace("~", vbCrLf), ImpHospitalCode, XICL04_ReadOnly.XInfoDirLicence),
                             XIRes.GetString("XINFO_UC03_057"), MessageBoxButton.OK, MessageBoxImage.Exclamation)
             Exit Sub
         End If
@@ -348,6 +348,8 @@ Public Class XIUC03_Imperium
         Me.Cursor = System.Windows.Input.Cursors.Wait
         GetImperiumData(MyDBFFileInfo.FullName, ImpHospitalNameD3KSystem, ImpDepartmentName, ImpSystemName)
         Me.Cursor = System.Windows.Input.Cursors.Arrow
+
+        SearchForSelectedProperty(Nothing, Nothing)
 
         '[System]
         'HospitalName = Gulmay Medical Ltd.
@@ -1086,12 +1088,18 @@ Public Class XIUC03_Imperium
 
     Private Sub ExportAsXPSProgressChanged(ByVal sender As Object, ByVal e As ProgressChangedEventArgs)
 
-        Dim CurrentExpRate As Double = MyUC.GetDoneRate(MyImpSearchTreatments.Count - e.ProgressPercentage + 1, DateAndTime.Timer) '+1 needed to avoid division by zero error at the beginning!
-        Dim FinishDate As DateTime = DateAndTime.DateAdd(DateInterval.Second, (e.ProgressPercentage / CurrentExpRate), Now)
+        UpdateInfoDialog(e.ProgressPercentage)
+
+    End Sub
+
+    Private Sub UpdateInfoDialog(ProgressInfo As Int32)
+
+        Dim CurrentExpRate As Double = MyUC.GetDoneRate(MyImpSearchTreatments.Count - ProgressInfo + 1, DateAndTime.Timer) '+1 needed to avoid division by zero error at the beginning!
+        Dim FinishDate As DateTime = DateAndTime.DateAdd(DateInterval.Second, (ProgressInfo / CurrentExpRate), Now)
         'Dim FinishDateAsSec As Double = (FinishDate - Today).TotalSeconds
 
         MyUC.LBL99_Info.Text = String.Format(XIRes.GetString("XINFO_UC99_002").Replace("~", vbCrLf),
-                                                MyImpSearchTreatments.Count - e.ProgressPercentage - 1,
+                                                MyImpSearchTreatments.Count - ProgressInfo - 1,
                                                 MyImpSearchTreatments.Count,
                                                 String.Format("{0:F2}", CurrentExpRate),
                                                 XstrahlCrypto.XstrahlFunctions.GetTimeAsHHMMSSwithColon(FinishDate))
@@ -1106,14 +1114,16 @@ Public Class XIUC03_Imperium
             MessageBox.Show(XIRes.GetString("XINFO_UC03_202"), XIRes.GetString("XINFO_UC03_200"), MessageBoxButton.OK, MessageBoxImage.Exclamation)
         Else
             If Not MyBackgrndWrkr.IsBusy = True Then
+
                 If CurrentPrintItemCounter > 0 Then
                     MyBackgrndWrkr.RunWorkerAsync()
                     Exit Sub
                 ElseIf CurrentPrintItemCounter = -1 Then
+                    UpdateInfoDialog(-1)
+                    MessageBox.Show(XIRes.GetString("XINFO_UC03_204"), XIRes.GetString("XINFO_UC03_200"), MessageBoxButton.OK, MessageBoxImage.Information)
+                Else
                     'User has cancelled. This is not the cancel of the background worker, because the backgroundworker is always finished after each XPS export!
                     MessageBox.Show(XIRes.GetString("XINFO_UC03_203"), XIRes.GetString("XINFO_UC03_200"), MessageBoxButton.OK, MessageBoxImage.Exclamation)
-                Else
-                    MessageBox.Show(XIRes.GetString("XINFO_UC03_204"), XIRes.GetString("XINFO_UC03_200"), MessageBoxButton.OK, MessageBoxImage.Information)
                 End If
             Else
                 MessageBox.Show(XIRes.GetString("XINFO_UC03_205"), XIRes.GetString("XINFO_UC03_200"), MessageBoxButton.OK, MessageBoxImage.Exclamation)

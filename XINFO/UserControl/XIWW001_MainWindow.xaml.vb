@@ -52,14 +52,15 @@ Class XIWW001_MainWindow
         'Create_Directory_Structure
         Dim DirInfo As DirectoryInfo
 
-        DirInfo = New DirectoryInfo(XICL04_ReadOnly.XInfoDirMain)
+        DirInfo = New DirectoryInfo(XICL04_ReadOnly.Folder_CUPXstrahlXInfo)
         If DirInfo.Exists = False Then
             DirInfo.Create()
         End If
 
         For Each SubDir In {XICL04_ReadOnly.XInfoDirTemp, XICL04_ReadOnly.XInfoDirExportCSV,
                             XICL04_ReadOnly.XInfoDirExportXML, XICL04_ReadOnly.XInfoDirExportXPS,
-                            XICL04_ReadOnly.XInfoDirSettings, XICL04_ReadOnly.XInfoDirClassicDB}
+                            XICL04_ReadOnly.XInfoDirSettings, XICL04_ReadOnly.XInfoDirClassicDB,
+                            XICL04_ReadOnly.XInfoDirLicence}
             DirInfo = New DirectoryInfo(SubDir)
             If DirInfo.Exists = False Then
                 Try

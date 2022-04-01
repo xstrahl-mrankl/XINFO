@@ -6,8 +6,7 @@
     xmlns:local="clr-namespace:XINFO"
     xmlns:p="clr-namespace:XINFO.My.Resources"
     ShutdownMode="OnMainWindowClose"
-    StartupUri="UserControl\XIWW001_MainWindow.xaml"
-    >
+    StartupUri="UserControl\XIWW001_MainWindow.xaml">
 
     <Application.Resources>
         <Color x:Key="Xstrahl_Purple100">#FF83389B</Color>
@@ -146,8 +145,7 @@
 
         <Style
             x:Key="Border01"
-            TargetType="{x:Type Border}"
-            >
+            TargetType="{x:Type Border}">
             <Setter Property="BorderBrush" Value="{StaticResource Xstrahl_SCB_Purple040}" />
             <Setter Property="BorderThickness" Value="1" />
         </Style>
@@ -159,8 +157,7 @@
 
         <Style
             x:Key="{x:Type DocumentViewer}"
-            TargetType="{x:Type DocumentViewer}"
-            >
+            TargetType="{x:Type DocumentViewer}">
             <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" />
             <Setter Property="FocusVisualStyle" Value="{x:Null}" />
             <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.WindowTextBrushKey}}" />
@@ -170,8 +167,7 @@
                         <Border
                             BorderBrush="{TemplateBinding BorderBrush}"
                             BorderThickness="{TemplateBinding BorderThickness}"
-                            Focusable="False"
-                            >
+                            Focusable="False">
                             <Grid KeyboardNavigation.TabNavigation="Local">
                                 <Grid.Background>
                                     <SolidColorBrush Color="{DynamicResource ControlLightColor}" />
@@ -183,62 +179,53 @@
                                 </Grid.RowDefinitions>
                                 <ToolBar
                                     KeyboardNavigation.TabNavigation="Continue"
-                                    ToolBarTray.IsLocked="True"
-                                    >
+                                    ToolBarTray.IsLocked="True">
 
                                     <Button
                                         Margin="10,0,10,0"
                                         Command="ApplicationCommands.Print"
                                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
-                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_001}"
-                                        />
+                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_001}" />
                                     <Button
                                         Command="ApplicationCommands.Copy"
                                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
                                         Content="{x:Static p:Resources.XINFO_Style_DocViewer_002}"
-                                        Visibility="Collapsed"
-                                        />
+                                        Visibility="Collapsed" />
                                     <Separator />
                                     <Button
                                         Margin="10,0,10,0"
                                         Command="NavigationCommands.IncreaseZoom"
                                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
-                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_003}"
-                                        />
+                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_003}" />
                                     <Button
                                         Margin="10,0,10,0"
                                         Command="NavigationCommands.DecreaseZoom"
                                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
-                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_004}"
-                                        />
+                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_004}" />
                                     <Separator />
                                     <Button
                                         Margin="10,0,10,0"
                                         Command="NavigationCommands.Zoom"
                                         CommandParameter="100.0"
                                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
-                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_005}"
-                                        />
+                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_005}" />
                                     <Button
                                         Margin="10,0,10,0"
                                         Command="DocumentViewer.FitToWidthCommand"
                                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
-                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_006}"
-                                        />
+                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_006}" />
                                     <Button
                                         Margin="10,0,10,0"
                                         Command="DocumentViewer.FitToMaxPagesAcrossCommand"
                                         CommandParameter="1"
                                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
-                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_007}"
-                                        />
+                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_007}" />
                                     <Button
                                         Margin="10,0,10,0"
                                         Command="DocumentViewer.FitToMaxPagesAcrossCommand"
                                         CommandParameter="2"
                                         CommandTarget="{Binding RelativeSource={RelativeSource TemplatedParent}}"
-                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_008}"
-                                        />
+                                        Content="{x:Static p:Resources.XINFO_Style_DocViewer_008}" />
                                 </ToolBar>
                                 <ScrollViewer
                                     x:Name="PART_ContentHost"
@@ -246,8 +233,7 @@
                                     HorizontalAlignment="Right"
                                     CanContentScroll="true"
                                     HorizontalScrollBarVisibility="Auto"
-                                    IsTabStop="true"
-                                    >
+                                    IsTabStop="true">
                                     <ScrollViewer.Resources>
                                         <clr:Double x:Key="{x:Static SystemParameters.VerticalScrollBarWidthKey}">30</clr:Double>
                                         <clr:Double x:Key="{x:Static SystemParameters.HorizontalScrollBarHeightKey}">30</clr:Double>
@@ -261,8 +247,7 @@
                                 </ScrollViewer>
                                 <ContentControl
                                     x:Name="PART_FindToolBarHost"
-                                    Grid.Row="2"
-                                    />
+                                    Grid.Row="2" />
                             </Grid>
                         </Border>
                     </ControlTemplate>
@@ -273,8 +258,7 @@
 
         <Style
             x:Key="GRD_UCMain"
-            TargetType="{x:Type Grid}"
-            >
+            TargetType="{x:Type Grid}">
             <Setter Property="Height" Value="Auto" />
             <Setter Property="HorizontalAlignment" Value="Stretch" />
             <Setter Property="Margin" Value="10" />
@@ -286,8 +270,7 @@
 
         <Style
             x:Key="LBL_UCTitle"
-            TargetType="{x:Type Label}"
-            >
+            TargetType="{x:Type Label}">
             <Setter Property="FontSize" Value="18" />
             <Setter Property="FontWeight" Value="Bold" />
             <Setter Property="Foreground" Value="Black" />
@@ -297,8 +280,7 @@
 
         <Style
             x:Key="STLRadioButton01"
-            TargetType="RadioButton"
-            >
+            TargetType="RadioButton">
             <Setter Property="FontSize" Value="14" />
             <Setter Property="VerticalAlignment" Value="Center" />
             <Setter Property="VerticalContentAlignment" Value="Center" />
@@ -310,8 +292,7 @@
 
         <Style
             x:Key="STLMenuButton01"
-            TargetType="Button"
-            >
+            TargetType="Button">
             <Setter Property="FontSize" Value="12" />
             <Setter Property="FontWeight" Value="Normal" />
             <Setter Property="Height" Value="80" />
@@ -327,30 +308,26 @@
                             Background="{TemplateBinding Background}"
                             BorderBrush="DarkGray"
                             BorderThickness="1"
-                            CornerRadius="3"
-                            >
+                            CornerRadius="3">
 
                             <StackPanel
                                 Name="STCKPNL"
                                 Background="{TemplateBinding Background}"
-                                Orientation="Vertical"
-                                >
+                                Orientation="Vertical">
                                 <Image
                                     Width="40"
                                     Height="40"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     Source="{TemplateBinding Tag}"
-                                    Stretch="Uniform"
-                                    />
+                                    Stretch="Uniform" />
                                 <TextBlock
                                     Margin="0,1,0,0"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Top"
                                     Text="{TemplateBinding Content}"
                                     TextAlignment="Center"
-                                    TextWrapping="Wrap"
-                                    />
+                                    TextWrapping="Wrap" />
                             </StackPanel>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -374,8 +351,7 @@
         <!--  This Button is used for the (flat) manual and settings options in the menu  -->
         <Style
             x:Key="STLMenuButton02"
-            TargetType="Button"
-            >
+            TargetType="Button">
             <Setter Property="FontSize" Value="12" />
             <Setter Property="FontWeight" Value="Normal" />
             <Setter Property="Height" Value="25" />
@@ -391,30 +367,26 @@
                             Background="{TemplateBinding Background}"
                             BorderBrush="DarkGray"
                             BorderThickness="1"
-                            CornerRadius="3"
-                            >
+                            CornerRadius="3">
 
                             <StackPanel
                                 Name="STCKPNL"
                                 Background="{TemplateBinding Background}"
-                                Orientation="Horizontal"
-                                >
+                                Orientation="Horizontal">
                                 <Image
                                     Width="20"
                                     Height="20"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     Source="{TemplateBinding Tag}"
-                                    Stretch="Uniform"
-                                    />
+                                    Stretch="Uniform" />
                                 <TextBlock
                                     Margin="5,0,0,0"
                                     HorizontalAlignment="Left"
                                     VerticalAlignment="Center"
                                     Text="{TemplateBinding Content}"
                                     TextAlignment="Center"
-                                    TextWrapping="Wrap"
-                                    />
+                                    TextWrapping="Wrap" />
                             </StackPanel>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -439,8 +411,7 @@
         <!--  This is the style for the big square buttons on the user controls  -->
         <Style
             x:Key="STLButton01"
-            TargetType="Button"
-            >
+            TargetType="Button">
             <Setter Property="FontSize" Value="12" />
             <Setter Property="FontWeight" Value="Normal" />
             <Setter Property="Height" Value="80" />
@@ -456,30 +427,26 @@
                             Background="{TemplateBinding Background}"
                             BorderBrush="DarkGray"
                             BorderThickness="1"
-                            CornerRadius="3"
-                            >
+                            CornerRadius="3">
 
                             <StackPanel
                                 Name="STCKPNL"
                                 Background="{TemplateBinding Background}"
-                                Orientation="Vertical"
-                                >
+                                Orientation="Vertical">
                                 <Image
                                     Width="40"
                                     Height="40"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     Source="{TemplateBinding Tag}"
-                                    Stretch="Uniform"
-                                    />
+                                    Stretch="Uniform" />
                                 <TextBlock
                                     Margin="0,1,0,0"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Top"
                                     Text="{TemplateBinding Content}"
                                     TextAlignment="Center"
-                                    TextWrapping="Wrap"
-                                    />
+                                    TextWrapping="Wrap" />
                             </StackPanel>
                         </Border>
                         <ControlTemplate.Triggers>
@@ -503,8 +470,7 @@
         <!--  This is the style for the flat buttons on the user controls  -->
         <Style
             x:Key="STLButton02"
-            TargetType="Button"
-            >
+            TargetType="Button">
             <Setter Property="Background" Value="{StaticResource ResourceKey=Xstrahl_SCB_Grey040}" />
             <Setter Property="FontSize" Value="12" />
             <Setter Property="FontWeight" Value="Normal" />
@@ -522,8 +488,7 @@
                             Background="{TemplateBinding Background}"
                             BorderBrush="DarkGray"
                             BorderThickness="1"
-                            CornerRadius="3"
-                            >
+                            CornerRadius="3">
 
                             <TextBlock
                                 Name="TXTBLCK"
@@ -531,8 +496,7 @@
                                 VerticalAlignment="Center"
                                 Text="{TemplateBinding Content}"
                                 TextAlignment="Center"
-                                TextWrapping="Wrap"
-                                />
+                                TextWrapping="Wrap" />
                         </Border>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsMouseOver" Value="True">
@@ -554,8 +518,7 @@
         <!--  This is the style for the big square buttons on the user controls  -->
         <Style
             x:Key="STLButton03"
-            TargetType="ToggleButton"
-            >
+            TargetType="ToggleButton">
             <Setter Property="FontSize" Value="12" />
             <Setter Property="FontWeight" Value="Normal" />
             <Setter Property="Height" Value="80" />
@@ -571,30 +534,26 @@
                             Background="{TemplateBinding Background}"
                             BorderBrush="DarkGray"
                             BorderThickness="1"
-                            CornerRadius="3"
-                            >
+                            CornerRadius="3">
 
                             <StackPanel
                                 Name="STCKPNL"
                                 Background="{TemplateBinding Background}"
-                                Orientation="Vertical"
-                                >
+                                Orientation="Vertical">
                                 <Image
                                     Width="40"
                                     Height="40"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
                                     Source="{TemplateBinding Tag}"
-                                    Stretch="Uniform"
-                                    />
+                                    Stretch="Uniform" />
                                 <TextBlock
                                     Margin="0,1,0,0"
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Top"
                                     Text="{TemplateBinding Content}"
                                     TextAlignment="Center"
-                                    TextWrapping="Wrap"
-                                    />
+                                    TextWrapping="Wrap" />
                             </StackPanel>
                         </Border>
                         <ControlTemplate.Triggers>

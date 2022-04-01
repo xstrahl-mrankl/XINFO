@@ -301,7 +301,7 @@
     <value>Export of XPS documents finished successfully.</value>
   </data>
   <data name="XINFO_UC03_205" xml:space="preserve">
-    <value>Backgroundjob finished, but it can be, that not all database records were exported.</value>
+    <value>Backgroundjob finished, but it can be that not all database records were exported.</value>
   </data>
   <data name="XINFO_UC03_206" xml:space="preserve">
     <value>Something is going while creating/saving XPS documents:~{0}</value>
